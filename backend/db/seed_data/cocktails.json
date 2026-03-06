@@ -1,0 +1,4883 @@
+[
+  {
+    "id": 1,
+    "name": "モヒート",
+    "name_en": "Mojito",
+    "image_url": "https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ラム、ミント、ライムを使った爽やかなカクテル",
+    "ingredients": [
+      {
+        "name": "ホワイトラム",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "砂糖",
+        "amount": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "ミントの葉",
+        "amount": "6-8",
+        "unit": "枚"
+      },
+      {
+        "name": "ソーダ水",
+        "amount": "適量",
+        "unit": null
+      },
+      {
+        "name": "氷",
+        "amount": "適量",
+        "unit": null
+      }
+    ],
+    "instructions": [
+      "グラスにミントの葉と砂糖を入れる",
+      "ライムジュースを加えて軽くつぶす",
+      "クラッシュアイスを加える",
+      "ラムを注ぐ",
+      "ソーダ水で満たす",
+      "軽くステアして完成"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "爽やか",
+      "ミント",
+      "ライム"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 2,
+    "name": "マルガリータ",
+    "name_en": "Margarita",
+    "image_url": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "テキーラベースの定番カクテル",
+    "ingredients": [
+      {
+        "name": "テキーラ",
+        "amount": "50",
+        "unit": "ml"
+      },
+      {
+        "name": "コアントロー",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "塩",
+        "amount": "適量",
+        "unit": null
+      }
+    ],
+    "instructions": [
+      "グラスの縁を濡らして塩をつける",
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "グラスに注ぐ"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "酸味",
+      "テキーラ",
+      "塩味"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 3,
+    "name": "ピニャコラーダ",
+    "name_en": "Piña Colada",
+    "image_url": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "トロピカルな味わいのラムカクテル",
+    "ingredients": [
+      {
+        "name": "ホワイトラム",
+        "amount": "50",
+        "unit": "ml"
+      },
+      {
+        "name": "ココナッツクリーム",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "パイナップルジュース",
+        "amount": "90",
+        "unit": "ml"
+      },
+      {
+        "name": "クラッシュアイス",
+        "amount": "1",
+        "unit": "カップ"
+      }
+    ],
+    "instructions": [
+      "ブレンダーに全ての材料を入れる",
+      "なめらかになるまでブレンドする",
+      "グラスに注ぐ",
+      "パイナップルとチェリーで飾る"
+    ],
+    "glass": "ハリケーングラス",
+    "category": "フローズンカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "トロピカル",
+      "ココナッツ",
+      "パイナップル"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 4,
+    "name": "マティーニ",
+    "name_en": "Martini",
+    "image_url": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "カクテルの王様と呼ばれる定番",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "ドライベルモット",
+        "amount": "10",
+        "unit": "ml"
+      },
+      {
+        "name": "オリーブ",
+        "amount": "1",
+        "unit": "個"
+      }
+    ],
+    "instructions": [
+      "ミキシンググラスに氷を入れる",
+      "ジンとベルモットを加える",
+      "ステアする",
+      "カクテルグラスに注ぐ",
+      "オリーブを飾る"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "ドライ",
+      "ジン",
+      "ハーブ"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 5,
+    "name": "コスモポリタン",
+    "name_en": "Cosmopolitan",
+    "image_url": "https://images.unsplash.com/photo-1536935338788-846bb9981813?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ピンク色が美しいウォッカカクテル",
+    "ingredients": [
+      {
+        "name": "ウォッカ",
+        "amount": "40",
+        "unit": "ml"
+      },
+      {
+        "name": "コアントロー",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "クランベリージュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ",
+      "ライムホイールで飾る"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "フルーティー",
+      "酸味",
+      "クランベリー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 6,
+    "name": "ダイキリ",
+    "name_en": "Daiquiri",
+    "image_url": "https://images.unsplash.com/photo-1623183029325-6dcbadf3daa8?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ラムとライムのシンプルなカクテル",
+    "ingredients": [
+      {
+        "name": "ホワイトラム",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "シュガーシロップ",
+        "amount": "10",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "酸味",
+      "ラム",
+      "さっぱり"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 7,
+    "name": "マイタイ",
+    "name_en": "Mai Tai",
+    "image_url": "https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "トロピカルな味わいのティキカクテル",
+    "ingredients": [
+      {
+        "name": "ダークラム",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "ホワイトラム",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "オレンジキュラソー",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "オルジェーシロップ",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "30",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "ロックグラスに注ぐ",
+      "ミントとパイナップルで飾る"
+    ],
+    "glass": "ロックグラス",
+    "category": "ティキカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "トロピカル",
+      "ラム",
+      "フルーティー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 8,
+    "name": "オールドファッションド",
+    "name_en": "Old Fashioned",
+    "image_url": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ウイスキーの味わいを楽しむクラシックカクテル",
+    "ingredients": [
+      {
+        "name": "バーボンウイスキー",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "角砂糖",
+        "amount": "1",
+        "unit": "個"
+      },
+      {
+        "name": "アンゴスチュラビターズ",
+        "amount": "2-3",
+        "unit": "dash"
+      },
+      {
+        "name": "オレンジピール",
+        "amount": "1",
+        "unit": "片"
+      }
+    ],
+    "instructions": [
+      "グラスに角砂糖とビターズを入れる",
+      "少量の水を加えて砂糖を溶かす",
+      "氷を加える",
+      "ウイスキーを注ぐ",
+      "ステアする",
+      "オレンジピールを絞って飾る"
+    ],
+    "glass": "ロックグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "ウイスキー",
+      "ビター",
+      "オレンジ"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 9,
+    "name": "モスコミュール",
+    "name_en": "Moscow Mule",
+    "image_url": "https://images.unsplash.com/photo-1558645836-e44122a743ee?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ジンジャービアを使った爽やかなカクテル",
+    "ingredients": [
+      {
+        "name": "ウォッカ",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "ジンジャービア",
+        "amount": "120",
+        "unit": "ml"
+      },
+      {
+        "name": "ライム",
+        "amount": "1",
+        "unit": "くし切り"
+      }
+    ],
+    "instructions": [
+      "銅製マグカップに氷を入れる",
+      "ウォッカとライムジュースを注ぐ",
+      "ジンジャービアで満たす",
+      "軽くステアする",
+      "ライムを飾る"
+    ],
+    "glass": "銅製マグカップ",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ジンジャー",
+      "ライム",
+      "爽やか"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 10,
+    "name": "ネグローニ",
+    "name_en": "Negroni",
+    "image_url": "https://images.unsplash.com/photo-1634055947646-61e5371bc788?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ビターな味わいのイタリアンカクテル",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "カンパリ",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "スイートベルモット",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "オレンジピール",
+        "amount": "1",
+        "unit": "片"
+      }
+    ],
+    "instructions": [
+      "ロックグラスに氷を入れる",
+      "全ての材料を注ぐ",
+      "ステアする",
+      "オレンジピールを飾る"
+    ],
+    "glass": "ロックグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "ビター",
+      "ハーブ",
+      "オレンジ"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 11,
+    "name": "ウイスキーサワー",
+    "name_en": "Whiskey Sour",
+    "image_url": "https://images.unsplash.com/photo-1481671703460-040cb8a2d909?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ウイスキーとレモンの酸味が効いたカクテル",
+    "ingredients": [
+      {
+        "name": "バーボンウイスキー",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "シュガーシロップ",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "卵白",
+        "amount": "1",
+        "unit": "個分"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料を入れて空シェイク",
+      "氷を加えて再度シェイク",
+      "カクテルグラスに注ぐ",
+      "チェリーとオレンジスライスで飾る"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "酸味",
+      "ウイスキー",
+      "クリーミー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 12,
+    "name": "ロングアイランドアイスティー",
+    "name_en": "Long Island Iced Tea",
+    "image_url": "https://images.unsplash.com/photo-1588673366175-e9133cf0e862?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "複数のスピリッツを使った強いカクテル",
+    "ingredients": [
+      {
+        "name": "ウォッカ",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "テキーラ",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "ホワイトラム",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "ジン",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "コアントロー",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "コーラ",
+        "amount": "適量",
+        "unit": null
+      }
+    ],
+    "instructions": [
+      "ハイボールグラスに氷を入れる",
+      "スピリッツとレモンジュースを注ぐ",
+      "コーラで満たす",
+      "ステアする",
+      "レモンスライスで飾る"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "複雑",
+      "レモン",
+      "コーラ"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 13,
+    "name": "ブラッディマリー",
+    "name_en": "Bloody Mary",
+    "image_url": "https://images.unsplash.com/photo-1624517452488-87b8f3186de1?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "トマトジュースを使ったユニークなカクテル",
+    "ingredients": [
+      {
+        "name": "ウォッカ",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "トマトジュース",
+        "amount": "90",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "ウスターソース",
+        "amount": "2-3",
+        "unit": "dash"
+      },
+      {
+        "name": "タバスコ",
+        "amount": "2-3",
+        "unit": "dash"
+      },
+      {
+        "name": "塩・胡椒",
+        "amount": "適量",
+        "unit": null
+      }
+    ],
+    "instructions": [
+      "ハイボールグラスに氷を入れる",
+      "全ての材料を入れる",
+      "よくステアする",
+      "セロリスティックで飾る"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "トマト",
+      "スパイシー",
+      "塩味"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 14,
+    "name": "ジントニック",
+    "name_en": "Gin and Tonic",
+    "image_url": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ジンとトニックウォーターのシンプルなカクテル",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "トニックウォーター",
+        "amount": "適量",
+        "unit": null
+      },
+      {
+        "name": "ライム",
+        "amount": "1",
+        "unit": "くし切り"
+      }
+    ],
+    "instructions": [
+      "ハイボールグラスに氷を入れる",
+      "ジンを注ぐ",
+      "トニックウォーターで満たす",
+      "軽くステアする",
+      "ライムを絞って飾る"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ジン",
+      "トニック",
+      "爽やか"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 15,
+    "name": "カイピリーニャ",
+    "name_en": "Caipirinha",
+    "image_url": "https://images.unsplash.com/photo-1586338211198-365fa418e7f0?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ブラジルの国民的カクテル",
+    "ingredients": [
+      {
+        "name": "カシャーサ",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "ライム",
+        "amount": "1",
+        "unit": "個"
+      },
+      {
+        "name": "砂糖",
+        "amount": "2",
+        "unit": "tsp"
+      }
+    ],
+    "instructions": [
+      "ライムを8等分に切る",
+      "グラスに入れて砂糖と一緒につぶす",
+      "クラッシュアイスを加える",
+      "カシャーサを注ぐ",
+      "よくステアする"
+    ],
+    "glass": "ロックグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "ライム",
+      "カシャーサ",
+      "爽やか"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 16,
+    "name": "エスプレッソマティーニ",
+    "name_en": "Espresso Martini",
+    "image_url": "https://images.unsplash.com/photo-1615721216093-b68c1846d43e?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "コーヒーを使った大人のカクテル",
+    "ingredients": [
+      {
+        "name": "ウォッカ",
+        "amount": "50",
+        "unit": "ml"
+      },
+      {
+        "name": "コーヒーリキュール",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "エスプレッソ",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "シュガーシロップ",
+        "amount": "10",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "強くシェイクする",
+      "カクテルグラスに注ぐ",
+      "コーヒー豆3粒で飾る"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "コーヒー",
+      "ビター",
+      "クリーミー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 17,
+    "name": "フレンチ75",
+    "name_en": "French 75",
+    "image_url": "https://images.unsplash.com/photo-1598972265391-322e9b3b1a5a?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "シャンパンを使った華やかなカクテル",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "シュガーシロップ",
+        "amount": "10",
+        "unit": "ml"
+      },
+      {
+        "name": "シャンパン",
+        "amount": "60",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーにジン、レモンジュース、シロップと氷を入れる",
+      "シェイクする",
+      "シャンパングラスに注ぐ",
+      "シャンパンで満たす",
+      "レモンツイストで飾る"
+    ],
+    "glass": "シャンパングラス",
+    "category": "スパークリングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "シャンパン",
+      "レモン",
+      "華やか"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 18,
+    "name": "アペロールスプリッツ",
+    "name_en": "Aperol Spritz",
+    "image_url": "https://images.unsplash.com/photo-1626350720388-f4c30c23afe6?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "イタリアの定番アペリティフ",
+    "ingredients": [
+      {
+        "name": "アペロール",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "プロセッコ",
+        "amount": "90",
+        "unit": "ml"
+      },
+      {
+        "name": "ソーダ水",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "オレンジスライス",
+        "amount": "1",
+        "unit": "枚"
+      }
+    ],
+    "instructions": [
+      "ワイングラスに氷を入れる",
+      "アペロールを注ぐ",
+      "プロセッコを加える",
+      "ソーダ水をトップ",
+      "オレンジスライスで飾る"
+    ],
+    "glass": "ワイングラス",
+    "category": "スパークリングカクテル",
+    "alcohol_content": "low",
+    "flavors": [
+      "ビター",
+      "オレンジ",
+      "爽やか"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 19,
+    "name": "ピスコサワー",
+    "name_en": "Pisco Sour",
+    "image_url": "https://images.unsplash.com/photo-1589391886645-d51941baf7fb?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "南米の代表的なカクテル",
+    "ingredients": [
+      {
+        "name": "ピスコ",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "シュガーシロップ",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "卵白",
+        "amount": "1",
+        "unit": "個分"
+      },
+      {
+        "name": "アンゴスチュラビターズ",
+        "amount": "3",
+        "unit": "dash"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料を入れて空シェイク",
+      "氷を加えて再度シェイク",
+      "カクテルグラスに注ぐ",
+      "ビターズを3滴垂らす"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "酸味",
+      "ピスコ",
+      "クリーミー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 20,
+    "name": "ベリーニ",
+    "name_en": "Bellini",
+    "image_url": "https://images.unsplash.com/photo-1481671703460-040cb8a2d909?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ピーチピューレとプロセッコのカクテル",
+    "ingredients": [
+      {
+        "name": "ピーチピューレ",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "プロセッコ",
+        "amount": "75",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シャンパングラスにピーチピューレを入れる",
+      "冷えたプロセッコをゆっくり注ぐ",
+      "軽くステアする"
+    ],
+    "glass": "シャンパングラス",
+    "category": "スパークリングカクテル",
+    "alcohol_content": "low",
+    "flavors": [
+      "ピーチ",
+      "フルーティー",
+      "甘い"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 21,
+    "name": "ミモザ",
+    "name_en": "Mimosa",
+    "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "オレンジジュースとシャンパンのカクテル",
+    "ingredients": [
+      {
+        "name": "オレンジジュース",
+        "amount": "75",
+        "unit": "ml"
+      },
+      {
+        "name": "シャンパン",
+        "amount": "75",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シャンパングラスにオレンジジュースを注ぐ",
+      "シャンパンをゆっくり注ぐ",
+      "軽くステアする"
+    ],
+    "glass": "シャンパングラス",
+    "category": "スパークリングカクテル",
+    "alcohol_content": "low",
+    "flavors": [
+      "オレンジ",
+      "シャンパン",
+      "爽やか"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 22,
+    "name": "サイドカー",
+    "name_en": "Sidecar",
+    "image_url": "https://images.unsplash.com/photo-1557682224-5b8590cd9ec5?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ブランデーベースのクラシックカクテル",
+    "ingredients": [
+      {
+        "name": "ブランデー",
+        "amount": "50",
+        "unit": "ml"
+      },
+      {
+        "name": "コアントロー",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "砂糖",
+        "amount": "適量",
+        "unit": null
+      }
+    ],
+    "instructions": [
+      "グラスの縁を濡らして砂糖をつける",
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "ブランデー",
+      "オレンジ",
+      "酸味"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 23,
+    "name": "ラムパンチ",
+    "name_en": "Rum Punch",
+    "image_url": "https://images.unsplash.com/photo-1546171753-97d7676e4602?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "トロピカルフルーツとラムのカクテル",
+    "ingredients": [
+      {
+        "name": "ダークラム",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "オレンジジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "パイナップルジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "グレナディンシロップ",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "ハイボールグラスに氷を入れる",
+      "全ての材料を注ぐ",
+      "よくステアする",
+      "フルーツで飾る"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "トロピカル",
+      "ラム",
+      "フルーティー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 24,
+    "name": "カミカゼ",
+    "name_en": "Kamikaze",
+    "image_url": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ウォッカベースのショートカクテル",
+    "ingredients": [
+      {
+        "name": "ウォッカ",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "コアントロー",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "30",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "ショットグラスに注ぐ"
+    ],
+    "glass": "ショットグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "ウォッカ",
+      "ライム",
+      "強い"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 25,
+    "name": "ブルーハワイ",
+    "name_en": "Blue Hawaii",
+    "image_url": "https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "青色が美しいトロピカルカクテル",
+    "ingredients": [
+      {
+        "name": "ホワイトラム",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "ブルーキュラソー",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "パイナップルジュース",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "ココナッツクリーム",
+        "amount": "30",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "ハリケーングラスに注ぐ",
+      "パイナップルとチェリーで飾る"
+    ],
+    "glass": "ハリケーングラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "トロピカル",
+      "ココナッツ",
+      "甘い"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 26,
+    "name": "テキーラサンライズ",
+    "name_en": "Tequila Sunrise",
+    "image_url": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "グラデーションが美しいテキーラカクテル",
+    "ingredients": [
+      {
+        "name": "テキーラ",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "オレンジジュース",
+        "amount": "90",
+        "unit": "ml"
+      },
+      {
+        "name": "グレナディンシロップ",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "ハイボールグラスに氷を入れる",
+      "テキーラとオレンジジュースを注ぐ",
+      "ステアする",
+      "グレナディンをゆっくり注ぐ",
+      "オレンジとチェリーで飾る"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "テキーラ",
+      "オレンジ",
+      "甘い"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 27,
+    "name": "ハーベイウォールバンガー",
+    "name_en": "Harvey Wallbanger",
+    "image_url": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ガリアーノを使った個性的なカクテル",
+    "ingredients": [
+      {
+        "name": "ウォッカ",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "ガリアーノ",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "オレンジジュース",
+        "amount": "120",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "ハイボールグラスに氷を入れる",
+      "ウォッカとオレンジジュースを注ぐ",
+      "ステアする",
+      "ガリアーノをフロートする",
+      "オレンジスライスで飾る"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "オレンジ",
+      "ハーブ",
+      "甘い"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 28,
+    "name": "シンガポールスリング",
+    "name_en": "Singapore Sling",
+    "image_url": "https://images.unsplash.com/photo-1560512823-829485b8bf24?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "シンガポール発祥の複雑な味わいのカクテル",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "チェリーブランデー",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "コアントロー",
+        "amount": "7.5",
+        "unit": "ml"
+      },
+      {
+        "name": "ベネディクティン",
+        "amount": "7.5",
+        "unit": "ml"
+      },
+      {
+        "name": "パイナップルジュース",
+        "amount": "120",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "グレナディンシロップ",
+        "amount": "10",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "ハリケーングラスに注ぐ",
+      "パイナップルとチェリーで飾る"
+    ],
+    "glass": "ハリケーングラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "複雑",
+      "フルーティー",
+      "ジン"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 29,
+    "name": "ホワイトレディ",
+    "name_en": "White Lady",
+    "image_url": "https://images.unsplash.com/photo-1561651188-d207bbec0088?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "卵白を使った白いカクテル",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "40",
+        "unit": "ml"
+      },
+      {
+        "name": "コアントロー",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "卵白",
+        "amount": "10",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料を入れて空シェイク",
+      "氷を加えて再度シェイク",
+      "カクテルグラスに注ぐ"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ジン",
+      "レモン",
+      "クリーミー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 30,
+    "name": "パロマ",
+    "name_en": "Paloma",
+    "image_url": "https://images.unsplash.com/photo-1574095855929-2cec6ab7af69?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "グレープフルーツとテキーラのメキシカンカクテル",
+    "ingredients": [
+      {
+        "name": "テキーラ",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "グレープフルーツジュース",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "ソーダ水",
+        "amount": "適量",
+        "unit": null
+      },
+      {
+        "name": "塩",
+        "amount": "適量",
+        "unit": null
+      }
+    ],
+    "instructions": [
+      "グラスの縁を濡らして塩をつける",
+      "グラスに氷を入れる",
+      "テキーラとジュースを注ぐ",
+      "ソーダ水で満たす",
+      "ライムで飾る"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "グレープフルーツ",
+      "テキーラ",
+      "塩味"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 31,
+    "name": "ギムレット",
+    "name_en": "Gimlet",
+    "image_url": "https://images.unsplash.com/photo-1586116593897-d2e7d46fc6a0?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ジンとライムのシンプルで洗練されたカクテル",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "シュガーシロップ",
+        "amount": "10",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ",
+      "ライムホイールで飾る"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "ジン",
+      "ライム",
+      "さっぱり"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 32,
+    "name": "アイリッシュコーヒー",
+    "name_en": "Irish Coffee",
+    "image_url": "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ウイスキーと生クリームを使った温かいカクテル",
+    "ingredients": [
+      {
+        "name": "アイリッシュウイスキー",
+        "amount": "40",
+        "unit": "ml"
+      },
+      {
+        "name": "ホットコーヒー",
+        "amount": "80",
+        "unit": "ml"
+      },
+      {
+        "name": "砂糖",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "生クリーム",
+        "amount": "30",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "アイリッシュコーヒーグラスを温める",
+      "砂糖とウイスキーを入れる",
+      "ホットコーヒーを注ぐ",
+      "ステアして砂糖を溶かす",
+      "スプーンを使って生クリームをフロートする"
+    ],
+    "glass": "アイリッシュコーヒーグラス",
+    "category": "ホットカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "コーヒー",
+      "ウイスキー",
+      "クリーミー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 33,
+    "name": "ブランデーアレキサンダー",
+    "name_en": "Brandy Alexander",
+    "image_url": "https://images.unsplash.com/photo-1582818833087-9bdf6ab2bb0f?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "デザートカクテルとして人気",
+    "ingredients": [
+      {
+        "name": "ブランデー",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "クレームドカカオ",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "生クリーム",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "ナツメグ",
+        "amount": "少々",
+        "unit": null
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ",
+      "ナツメグを振りかける"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "チョコレート",
+      "ブランデー",
+      "クリーミー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 34,
+    "name": "ラモスジンフィズ",
+    "name_en": "Ramos Gin Fizz",
+    "image_url": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "泡立ちが特徴的なクラシックカクテル",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "砂糖",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "生クリーム",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "卵白",
+        "amount": "1",
+        "unit": "個分"
+      },
+      {
+        "name": "オレンジフラワーウォーター",
+        "amount": "3",
+        "unit": "dash"
+      },
+      {
+        "name": "ソーダ水",
+        "amount": "適量",
+        "unit": null
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料（ソーダ水以外）を入れる",
+      "氷なしで2分間シェイク",
+      "氷を加えてさらに1分シェイク",
+      "コリンズグラスに注ぐ",
+      "ソーダ水をトップ"
+    ],
+    "glass": "コリンズグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ジン",
+      "シトラス",
+      "クリーミー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 35,
+    "name": "カルーアミルク",
+    "name_en": "Kahlua Milk",
+    "image_url": "https://images.unsplash.com/photo-1520637836862-4d197d17c55a?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "コーヒーリキュールとミルクの甘いカクテル",
+    "ingredients": [
+      {
+        "name": "カルーア",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "牛乳",
+        "amount": "90",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "ロックグラスに氷を入れる",
+      "カルーアを注ぐ",
+      "牛乳を注ぐ",
+      "軽くステアする"
+    ],
+    "glass": "ロックグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "low",
+    "flavors": [
+      "コーヒー",
+      "ミルク",
+      "甘い"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 36,
+    "name": "フローズンダイキリ",
+    "name_en": "Frozen Daiquiri",
+    "image_url": "https://images.unsplash.com/photo-1541855493-0ee1394b1d1e?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "シャーベット状のラムカクテル",
+    "ingredients": [
+      {
+        "name": "ホワイトラム",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "シュガーシロップ",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "クラッシュアイス",
+        "amount": "1",
+        "unit": "カップ"
+      }
+    ],
+    "instructions": [
+      "ブレンダーに全ての材料を入れる",
+      "なめらかになるまでブレンド",
+      "カクテルグラスに注ぐ"
+    ],
+    "glass": "カクテルグラス",
+    "category": "フローズンカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ラム",
+      "ライム",
+      "冷たい"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 37,
+    "name": "サゼラック",
+    "name_en": "Sazerac",
+    "image_url": "https://images.unsplash.com/photo-1585432553965-3b0b3e6dd5d0?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ニューオーリンズ生まれのウイスキーカクテル",
+    "ingredients": [
+      {
+        "name": "ライウイスキー",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "アブサン",
+        "amount": "10",
+        "unit": "ml"
+      },
+      {
+        "name": "角砂糖",
+        "amount": "1",
+        "unit": "個"
+      },
+      {
+        "name": "ペイショーズビターズ",
+        "amount": "3",
+        "unit": "dash"
+      },
+      {
+        "name": "レモンピール",
+        "amount": "1",
+        "unit": "片"
+      }
+    ],
+    "instructions": [
+      "グラスをアブサンでリンスして捨てる",
+      "別のグラスで角砂糖とビターズをつぶす",
+      "ウイスキーと氷を加えてステア",
+      "リンスしたグラスに注ぐ",
+      "レモンピールを絞って飾る"
+    ],
+    "glass": "ロックグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "ウイスキー",
+      "アニス",
+      "ビター"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 38,
+    "name": "ヘミングウェイダイキリ",
+    "name_en": "Hemingway Daiquiri",
+    "image_url": "https://images.unsplash.com/photo-1605270012305-e2d4c97b5f4f?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "グレープフルーツを加えた特別なダイキリ",
+    "ingredients": [
+      {
+        "name": "ホワイトラム",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "25",
+        "unit": "ml"
+      },
+      {
+        "name": "グレープフルーツジュース",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "マラスキーノリキュール",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ",
+      "ライムホイールで飾る"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ラム",
+      "シトラス",
+      "さっぱり"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 39,
+    "name": "プランターズパンチ",
+    "name_en": "Planter's Punch",
+    "image_url": "https://images.unsplash.com/photo-1546171753-97d7676e4602?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ジャマイカ発祥のラムパンチ",
+    "ingredients": [
+      {
+        "name": "ダークラム",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "35",
+        "unit": "ml"
+      },
+      {
+        "name": "砂糖",
+        "amount": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "水",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "アンゴスチュラビターズ",
+        "amount": "2",
+        "unit": "dash"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "ハイボールグラスに注ぐ",
+      "フルーツで豪華に飾る"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ラム",
+      "ライム",
+      "フルーティー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 40,
+    "name": "アメリカーノ",
+    "name_en": "Americano",
+    "image_url": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "カンパリとベルモットのイタリアンカクテル",
+    "ingredients": [
+      {
+        "name": "カンパリ",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "スイートベルモット",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "ソーダ水",
+        "amount": "適量",
+        "unit": null
+      },
+      {
+        "name": "オレンジスライス",
+        "amount": "1",
+        "unit": "枚"
+      }
+    ],
+    "instructions": [
+      "ロックグラスに氷を入れる",
+      "カンパリとベルモットを注ぐ",
+      "ソーダ水で満たす",
+      "ステアする",
+      "オレンジスライスで飾る"
+    ],
+    "glass": "ロックグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "low",
+    "flavors": [
+      "ビター",
+      "ハーブ",
+      "爽やか"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 41,
+    "name": "ダークアンドストーミー",
+    "name_en": "Dark and Stormy",
+    "image_url": "https://images.unsplash.com/photo-1560512823-829485b8bf24?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ダークラムとジンジャービアのカクテル",
+    "ingredients": [
+      {
+        "name": "ダークラム",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "ジンジャービア",
+        "amount": "100",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "10",
+        "unit": "ml"
+      },
+      {
+        "name": "ライム",
+        "amount": "1",
+        "unit": "くし切り"
+      }
+    ],
+    "instructions": [
+      "ハイボールグラスに氷を入れる",
+      "ジンジャービアを注ぐ",
+      "ラムをフロートする",
+      "ライムジュースを加える",
+      "ライムで飾る"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ラム",
+      "ジンジャー",
+      "スパイシー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 42,
+    "name": "ヴェスパー",
+    "name_en": "Vesper",
+    "image_url": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ジェームズ・ボンドが愛したカクテル",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "ウォッカ",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "リレブラン",
+        "amount": "10",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンピール",
+        "amount": "1",
+        "unit": "片"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "強くシェイクする",
+      "カクテルグラスに注ぐ",
+      "レモンピールを絞って飾る"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "ジン",
+      "ウォッカ",
+      "ドライ"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 43,
+    "name": "ペーパープレーン",
+    "name_en": "Paper Plane",
+    "image_url": "https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "バーボンベースのモダンクラシック",
+    "ingredients": [
+      {
+        "name": "バーボンウイスキー",
+        "amount": "22.5",
+        "unit": "ml"
+      },
+      {
+        "name": "アペロール",
+        "amount": "22.5",
+        "unit": "ml"
+      },
+      {
+        "name": "アマーロノニーノ",
+        "amount": "22.5",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "22.5",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "バーボン",
+      "ビター",
+      "バランス"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 44,
+    "name": "ビーズニーズ",
+    "name_en": "Bee's Knees",
+    "image_url": "https://images.unsplash.com/photo-1536935338788-846bb9981813?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ハチミツを使った禁酒法時代のカクテル",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "22.5",
+        "unit": "ml"
+      },
+      {
+        "name": "ハチミツシロップ",
+        "amount": "22.5",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ",
+      "レモンツイストで飾る"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ジン",
+      "ハチミツ",
+      "レモン"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 45,
+    "name": "スコッチアンドソーダ",
+    "name_en": "Scotch and Soda",
+    "image_url": "https://images.unsplash.com/photo-1606762899601-16a0b47c2c79?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "スコッチウイスキーのシンプルな飲み方",
+    "ingredients": [
+      {
+        "name": "スコッチウイスキー",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "ソーダ水",
+        "amount": "適量",
+        "unit": null
+      }
+    ],
+    "instructions": [
+      "ハイボールグラスに氷を入れる",
+      "スコッチを注ぐ",
+      "ソーダ水で満たす",
+      "軽くステアする"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ウイスキー",
+      "爽やか",
+      "シンプル"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 46,
+    "name": "ラストワード",
+    "name_en": "Last Word",
+    "image_url": "https://images.unsplash.com/photo-1557682224-5b8590cd9ec5?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "シャルトリューズを使った複雑な味わい",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "22.5",
+        "unit": "ml"
+      },
+      {
+        "name": "シャルトリューズヴェール",
+        "amount": "22.5",
+        "unit": "ml"
+      },
+      {
+        "name": "マラスキーノリキュール",
+        "amount": "22.5",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "22.5",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "ハーブ",
+      "複雑",
+      "バランス"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 47,
+    "name": "ペニシリン",
+    "name_en": "Penicillin",
+    "image_url": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "スコッチウイスキーの新しいクラシック",
+    "ingredients": [
+      {
+        "name": "ブレンデッドスコッチ",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "22.5",
+        "unit": "ml"
+      },
+      {
+        "name": "ハチミツジンジャーシロップ",
+        "amount": "22.5",
+        "unit": "ml"
+      },
+      {
+        "name": "アイラスコッチ",
+        "amount": "7.5",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料（アイラスコッチ以外）と氷を入れる",
+      "よくシェイクする",
+      "ロックグラスに注ぐ",
+      "アイラスコッチをフロートする"
+    ],
+    "glass": "ロックグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "スコッチ",
+      "ジンジャー",
+      "スモーキー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 48,
+    "name": "クローバークラブ",
+    "name_en": "Clover Club",
+    "image_url": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ラズベリーの風味が特徴的なジンカクテル",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "22.5",
+        "unit": "ml"
+      },
+      {
+        "name": "ラズベリーシロップ",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "卵白",
+        "amount": "1",
+        "unit": "個分"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料を入れて空シェイク",
+      "氷を加えて再度シェイク",
+      "カクテルグラスに注ぐ",
+      "ラズベリーで飾る"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ジン",
+      "ラズベリー",
+      "クリーミー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 49,
+    "name": "ブラックベルベット",
+    "name_en": "Black Velvet",
+    "image_url": "https://images.unsplash.com/photo-1608270586620-248524c67de9?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "スタウトビールとシャンパンの組み合わせ",
+    "ingredients": [
+      {
+        "name": "スタウトビール",
+        "amount": "125",
+        "unit": "ml"
+      },
+      {
+        "name": "シャンパン",
+        "amount": "125",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シャンパングラスを冷やす",
+      "スタウトビールをゆっくり注ぐ",
+      "シャンパンをゆっくり加える",
+      "軽くステアする"
+    ],
+    "glass": "シャンパングラス",
+    "category": "ビアカクテル",
+    "alcohol_content": "low",
+    "flavors": [
+      "ビール",
+      "シャンパン",
+      "クリーミー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 50,
+    "name": "トムコリンズ",
+    "name_en": "Tom Collins",
+    "image_url": "https://images.unsplash.com/photo-1606762899601-16a0b47c2c79?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ジンとレモンの爽やかなロングカクテル",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "シュガーシロップ",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "ソーダ水",
+        "amount": "適量",
+        "unit": null
+      },
+      {
+        "name": "レモンスライス",
+        "amount": "1",
+        "unit": "枚"
+      },
+      {
+        "name": "チェリー",
+        "amount": "1",
+        "unit": "個"
+      }
+    ],
+    "instructions": [
+      "コリンズグラスに氷を入れる",
+      "ジン、レモンジュース、シロップを注ぐ",
+      "ソーダ水で満たす",
+      "ステアする",
+      "レモンとチェリーで飾る"
+    ],
+    "glass": "コリンズグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ジン",
+      "レモン",
+      "爽やか"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 51,
+    "name": "アビエーション",
+    "name_en": "Aviation",
+    "image_url": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "クレームドヴィオレットが特徴の紫色のカクテル",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "マラスキーノリキュール",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "クレームドヴィオレット",
+        "amount": "7.5",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "22.5",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ",
+      "チェリーで飾る"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ジン",
+      "フローラル",
+      "酸味"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 52,
+    "name": "ボールバー",
+    "name_en": "Boulevard",
+    "image_url": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "バーボンベースのビターカクテル",
+    "ingredients": [
+      {
+        "name": "バーボンウイスキー",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "ドライベルモット",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "カンパリ",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "オレンジピール",
+        "amount": "1",
+        "unit": "片"
+      }
+    ],
+    "instructions": [
+      "ミキシンググラスに氷と材料を入れる",
+      "ステアする",
+      "カクテルグラスに注ぐ",
+      "オレンジピールで飾る"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "バーボン",
+      "ビター",
+      "ハーブ"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 53,
+    "name": "カチャーサソーダ",
+    "name_en": "Cachaça Soda",
+    "image_url": "https://images.unsplash.com/photo-1536935338788-846bb9981813?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ブラジルの蒸留酒カシャーサのシンプルな楽しみ方",
+    "ingredients": [
+      {
+        "name": "カシャーサ",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "ソーダ水",
+        "amount": "適量",
+        "unit": null
+      },
+      {
+        "name": "ライム",
+        "amount": "1",
+        "unit": "くし切り"
+      }
+    ],
+    "instructions": [
+      "ハイボールグラスに氷を入れる",
+      "カシャーサとライムジュースを注ぐ",
+      "ソーダ水で満たす",
+      "ステアする",
+      "ライムで飾る"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "カシャーサ",
+      "ライム",
+      "爽やか"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 54,
+    "name": "チャイナブルー",
+    "name_en": "China Blue",
+    "image_url": "https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "鮮やかな青色が印象的なカクテル",
+    "ingredients": [
+      {
+        "name": "ライチリキュール",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "ブルーキュラソー",
+        "amount": "10",
+        "unit": "ml"
+      },
+      {
+        "name": "グレープフルーツジュース",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "トニックウォーター",
+        "amount": "適量",
+        "unit": null
+      }
+    ],
+    "instructions": [
+      "ハイボールグラスに氷を入れる",
+      "リキュールとジュースを注ぐ",
+      "トニックウォーターで満たす",
+      "ステアする"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "low",
+    "flavors": [
+      "ライチ",
+      "シトラス",
+      "爽やか"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 55,
+    "name": "ディサローノサワー",
+    "name_en": "Disaronno Sour",
+    "image_url": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "アマレットリキュールの酸味カクテル",
+    "ingredients": [
+      {
+        "name": "ディサローノ",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "シュガーシロップ",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "卵白",
+        "amount": "1",
+        "unit": "個分"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料を入れて空シェイク",
+      "氷を加えて再度シェイク",
+      "ロックグラスに注ぐ",
+      "チェリーで飾る"
+    ],
+    "glass": "ロックグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "アーモンド",
+      "酸味",
+      "クリーミー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 56,
+    "name": "エルディアブロ",
+    "name_en": "El Diablo",
+    "image_url": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "テキーラとカシスの悪魔的カクテル",
+    "ingredients": [
+      {
+        "name": "テキーラ",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "クレームドカシス",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "ジンジャービア",
+        "amount": "適量",
+        "unit": null
+      }
+    ],
+    "instructions": [
+      "ハイボールグラスに氷を入れる",
+      "テキーラ、カシス、ライムジュースを注ぐ",
+      "ジンジャービアで満たす",
+      "ステアする",
+      "ライムで飾る"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "テキーラ",
+      "カシス",
+      "ジンジャー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 57,
+    "name": "フィズ",
+    "name_en": "Gin Fizz",
+    "image_url": "https://images.unsplash.com/photo-1557682224-5b8590cd9ec5?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ジンベースの泡立つカクテル",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "シュガーシロップ",
+        "amount": "10",
+        "unit": "ml"
+      },
+      {
+        "name": "ソーダ水",
+        "amount": "適量",
+        "unit": null
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料（ソーダ水以外）と氷を入れる",
+      "シェイクする",
+      "タンブラーグラスに注ぐ",
+      "ソーダ水をトップ"
+    ],
+    "glass": "タンブラーグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ジン",
+      "レモン",
+      "泡立ち"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 58,
+    "name": "ゴールドラッシュ",
+    "name_en": "Gold Rush",
+    "image_url": "https://images.unsplash.com/photo-1606762899601-16a0b47c2c79?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "バーボンとハチミツのモダンカクテル",
+    "ingredients": [
+      {
+        "name": "バーボンウイスキー",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "22.5",
+        "unit": "ml"
+      },
+      {
+        "name": "ハチミツシロップ",
+        "amount": "22.5",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "ロックグラスに注ぐ"
+    ],
+    "glass": "ロックグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "バーボン",
+      "ハチミツ",
+      "レモン"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 59,
+    "name": "ハンキーパンキー",
+    "name_en": "Hanky Panky",
+    "image_url": "https://images.unsplash.com/photo-1520637836862-4d197d17c55a?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ジンとフェルネットブランカのクラシック",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "スイートベルモット",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "フェルネットブランカ",
+        "amount": "7.5",
+        "unit": "ml"
+      },
+      {
+        "name": "オレンジピール",
+        "amount": "1",
+        "unit": "片"
+      }
+    ],
+    "instructions": [
+      "ミキシンググラスに材料と氷を入れる",
+      "ステアする",
+      "カクテルグラスに注ぐ",
+      "オレンジピールで飾る"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "ジン",
+      "ハーブ",
+      "ビター"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 60,
+    "name": "アイスピック",
+    "name_en": "Ice Pick",
+    "image_url": "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ウォッカとアイスティーの組み合わせ",
+    "ingredients": [
+      {
+        "name": "ウォッカ",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "アイスティー",
+        "amount": "120",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンスライス",
+        "amount": "1",
+        "unit": "枚"
+      }
+    ],
+    "instructions": [
+      "ハイボールグラスに氷を入れる",
+      "材料を全て注ぐ",
+      "ステアする",
+      "レモンスライスで飾る"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ウォッカ",
+      "ティー",
+      "レモン"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 61,
+    "name": "ジャングルバード",
+    "name_en": "Jungle Bird",
+    "image_url": "https://images.unsplash.com/photo-1582818833087-9bdf6ab2bb0f?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ラムとカンパリのトロピカルカクテル",
+    "ingredients": [
+      {
+        "name": "ダークラム",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "カンパリ",
+        "amount": "22.5",
+        "unit": "ml"
+      },
+      {
+        "name": "パイナップルジュース",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "シュガーシロップ",
+        "amount": "7.5",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "ロックグラスに注ぐ",
+      "パイナップルで飾る"
+    ],
+    "glass": "ロックグラス",
+    "category": "ティキカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ラム",
+      "ビター",
+      "トロピカル"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 62,
+    "name": "キューバリブレ",
+    "name_en": "Cuba Libre",
+    "image_url": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ラムコークにライムを加えたカクテル",
+    "ingredients": [
+      {
+        "name": "ホワイトラム",
+        "amount": "50",
+        "unit": "ml"
+      },
+      {
+        "name": "コーラ",
+        "amount": "120",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "10",
+        "unit": "ml"
+      },
+      {
+        "name": "ライム",
+        "amount": "1",
+        "unit": "くし切り"
+      }
+    ],
+    "instructions": [
+      "ハイボールグラスに氷を入れる",
+      "ラムとライムジュースを注ぐ",
+      "コーラで満たす",
+      "ステアする",
+      "ライムで飾る"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ラム",
+      "コーラ",
+      "ライム"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 63,
+    "name": "リンチバーグレモネード",
+    "name_en": "Lynchburg Lemonade",
+    "image_url": "https://images.unsplash.com/photo-1541855493-0ee1394b1d1e?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ジャックダニエルズを使ったレモネード",
+    "ingredients": [
+      {
+        "name": "ジャックダニエルズ",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "コアントロー",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンライムソーダ",
+        "amount": "適量",
+        "unit": null
+      }
+    ],
+    "instructions": [
+      "ハイボールグラスに氷を入れる",
+      "ウイスキー、コアントロー、レモンジュースを注ぐ",
+      "レモンライムソーダで満たす",
+      "ステアする",
+      "レモンスライスで飾る"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ウイスキー",
+      "レモン",
+      "爽やか"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 64,
+    "name": "メキシカンマティーニ",
+    "name_en": "Mexican Martini",
+    "image_url": "https://images.unsplash.com/photo-1574095855929-2cec6ab7af69?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "テキーラベースのマティーニスタイル",
+    "ingredients": [
+      {
+        "name": "テキーラ",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "コアントロー",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "オリーブブライン",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "オリーブ",
+        "amount": "2",
+        "unit": "個"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "マティーニグラスに注ぐ",
+      "オリーブで飾る"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "テキーラ",
+      "ライム",
+      "塩味"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 65,
+    "name": "ノックアウト",
+    "name_en": "Knockout",
+    "image_url": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ジンとアブサンの強力なカクテル",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "ドライベルモット",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "アブサン",
+        "amount": "7.5",
+        "unit": "ml"
+      },
+      {
+        "name": "クレームドマント",
+        "amount": "7.5",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンピール",
+        "amount": "1",
+        "unit": "片"
+      }
+    ],
+    "instructions": [
+      "ミキシンググラスに材料と氷を入れる",
+      "ステアする",
+      "カクテルグラスに注ぐ",
+      "レモンピールで飾る"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "ジン",
+      "アニス",
+      "ミント"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 66,
+    "name": "オパール",
+    "name_en": "Opal",
+    "image_url": "https://images.unsplash.com/photo-1560512823-829485b8bf24?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ジンとオレンジの華やかなカクテル",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "コアントロー",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "オレンジジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "オレンジフラワーウォーター",
+        "amount": "2",
+        "unit": "dash"
+      },
+      {
+        "name": "砂糖",
+        "amount": "1",
+        "unit": "tsp"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ジン",
+      "オレンジ",
+      "フローラル"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 67,
+    "name": "パラダイス",
+    "name_en": "Paradise",
+    "image_url": "https://images.unsplash.com/photo-1561651188-d207bbec0088?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ジンとアプリコットブランデーのカクテル",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "アプリコットブランデー",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "オレンジジュース",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "5",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ジン",
+      "アプリコット",
+      "フルーティー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 68,
+    "name": "クイーンズパークスウィズル",
+    "name_en": "Queen's Park Swizzle",
+    "image_url": "https://images.unsplash.com/photo-1586116593897-d2e7d46fc6a0?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "トリニダード発祥のラムカクテル",
+    "ingredients": [
+      {
+        "name": "デメララララム",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "シュガーシロップ",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "ミントの葉",
+        "amount": "8-10",
+        "unit": "枚"
+      },
+      {
+        "name": "アンゴスチュラビターズ",
+        "amount": "2",
+        "unit": "dash"
+      }
+    ],
+    "instructions": [
+      "コリンズグラスにミントと砂糖を入れて軽くつぶす",
+      "クラッシュアイスを入れる",
+      "ラムとライムジュースを注ぐ",
+      "スウィズルスティックで混ぜる",
+      "ビターズをトップ"
+    ],
+    "glass": "コリンズグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ラム",
+      "ミント",
+      "ライム"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 69,
+    "name": "レッドスナッパー",
+    "name_en": "Red Snapper",
+    "image_url": "https://images.unsplash.com/photo-1546171753-97d7676e4602?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ジンベースのブラッディマリー",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "トマトジュース",
+        "amount": "90",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "ウスターソース",
+        "amount": "2-3",
+        "unit": "dash"
+      },
+      {
+        "name": "タバスコ",
+        "amount": "2-3",
+        "unit": "dash"
+      },
+      {
+        "name": "塩・胡椒",
+        "amount": "適量",
+        "unit": null
+      }
+    ],
+    "instructions": [
+      "ハイボールグラスに氷を入れる",
+      "全ての材料を入れる",
+      "よくステアする",
+      "セロリスティックで飾る"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ジン",
+      "トマト",
+      "スパイシー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 70,
+    "name": "スティンガー",
+    "name_en": "Stinger",
+    "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ブランデーとミントリキュールのデザートカクテル",
+    "ingredients": [
+      {
+        "name": "ブランデー",
+        "amount": "50",
+        "unit": "ml"
+      },
+      {
+        "name": "ホワイトクレームドマント",
+        "amount": "20",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "ブランデー",
+      "ミント",
+      "甘い"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 71,
+    "name": "トリニダードサワー",
+    "name_en": "Trinidad Sour",
+    "image_url": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "アンゴスチュラビターズがベースの珍しいカクテル",
+    "ingredients": [
+      {
+        "name": "アンゴスチュラビターズ",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "オルジェーシロップ",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "22.5",
+        "unit": "ml"
+      },
+      {
+        "name": "ライウイスキー",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ビターズ",
+      "アーモンド",
+      "酸味"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 72,
+    "name": "アルティメットマイタイ",
+    "name_en": "Ultimate Mai Tai",
+    "image_url": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "複数のラムを使った贅沢なマイタイ",
+    "ingredients": [
+      {
+        "name": "ジャマイカンラム",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "マルティニークラム",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "オレンジキュラソー",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "オルジェーシロップ",
+        "amount": "10",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "シンプルシロップ",
+        "amount": "7.5",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "ダブルロックグラスに注ぐ",
+      "ミントとライムで飾る"
+    ],
+    "glass": "ダブルロックグラス",
+    "category": "ティキカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "ラム",
+      "トロピカル",
+      "複雑"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 73,
+    "name": "ヴュー・カレ",
+    "name_en": "Vieux Carré",
+    "image_url": "https://images.unsplash.com/photo-1536935338788-846bb9981813?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ニューオーリンズ発祥のウイスキーカクテル",
+    "ingredients": [
+      {
+        "name": "ライウイスキー",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "コニャック",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "スイートベルモット",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "ベネディクティン",
+        "amount": "7.5",
+        "unit": "ml"
+      },
+      {
+        "name": "ペイショーズビターズ",
+        "amount": "2",
+        "unit": "dash"
+      },
+      {
+        "name": "アンゴスチュラビターズ",
+        "amount": "2",
+        "unit": "dash"
+      }
+    ],
+    "instructions": [
+      "ミキシンググラスに材料と氷を入れる",
+      "ステアする",
+      "ロックグラスに注ぐ",
+      "レモンピールで飾る"
+    ],
+    "glass": "ロックグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "ウイスキー",
+      "コニャック",
+      "複雑"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 74,
+    "name": "ウォーターメロンマティーニ",
+    "name_en": "Watermelon Martini",
+    "image_url": "https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "スイカを使った夏のカクテル",
+    "ingredients": [
+      {
+        "name": "ウォッカ",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "スイカジュース",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "シュガーシロップ",
+        "amount": "10",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ",
+      "スイカの一片で飾る"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ウォッカ",
+      "スイカ",
+      "爽やか"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 75,
+    "name": "エックスワイジー",
+    "name_en": "XYZ",
+    "image_url": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "アルファベットの最後を冠したラムカクテル",
+    "ingredients": [
+      {
+        "name": "ホワイトラム",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "コアントロー",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "30",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ラム",
+      "オレンジ",
+      "酸味"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 76,
+    "name": "イエローバード",
+    "name_en": "Yellow Bird",
+    "image_url": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "黄色が美しいトロピカルカクテル",
+    "ingredients": [
+      {
+        "name": "ホワイトラム",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "ガリアーノ",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "コアントロー",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ラム",
+      "ハーブ",
+      "シトラス"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 77,
+    "name": "ゾンビ",
+    "name_en": "Zombie",
+    "image_url": "https://images.unsplash.com/photo-1557682224-5b8590cd9ec5?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "複数のラムを使った強力なティキカクテル",
+    "ingredients": [
+      {
+        "name": "ホワイトラム",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "ゴールドラム",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "ダークラム",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "アプリコットブランデー",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "パイナップルジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "グレナディンシロップ",
+        "amount": "10",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "ハリケーングラスに注ぐ",
+      "フルーツで豪華に飾る"
+    ],
+    "glass": "ハリケーングラス",
+    "category": "ティキカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "ラム",
+      "トロピカル",
+      "複雑"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 78,
+    "name": "アラスカ",
+    "name_en": "Alaska",
+    "image_url": "https://images.unsplash.com/photo-1606762899601-16a0b47c2c79?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ジンとシャルトリューズの強いカクテル",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "シャルトリューズジョーヌ",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "オレンジビターズ",
+        "amount": "2",
+        "unit": "dash"
+      }
+    ],
+    "instructions": [
+      "ミキシンググラスに材料と氷を入れる",
+      "ステアする",
+      "カクテルグラスに注ぐ",
+      "レモンピールで飾る"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "ジン",
+      "ハーブ",
+      "強い"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 79,
+    "name": "バンブー",
+    "name_en": "Bamboo",
+    "image_url": "https://images.unsplash.com/photo-1520637836862-4d197d17c55a?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "日本生まれのシェリーカクテル",
+    "ingredients": [
+      {
+        "name": "ドライシェリー",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "ドライベルモット",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "オレンジビターズ",
+        "amount": "2",
+        "unit": "dash"
+      },
+      {
+        "name": "アンゴスチュラビターズ",
+        "amount": "1",
+        "unit": "dash"
+      }
+    ],
+    "instructions": [
+      "ミキシンググラスに材料と氷を入れる",
+      "ステアする",
+      "カクテルグラスに注ぐ",
+      "レモンピールで飾る"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "low",
+    "flavors": [
+      "シェリー",
+      "ドライ",
+      "軽い"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 80,
+    "name": "カーディナル",
+    "name_en": "Cardinal",
+    "image_url": "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ジンとカンパリの赤いカクテル",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "カンパリ",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "ドライベルモット",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ジン",
+      "ビター",
+      "ハーブ"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 81,
+    "name": "ドゥボネカクテル",
+    "name_en": "Dubonnet Cocktail",
+    "image_url": "https://images.unsplash.com/photo-1582818833087-9bdf6ab2bb0f?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ドゥボネとジンのクラシック",
+    "ingredients": [
+      {
+        "name": "ドゥボネルージュ",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "ジン",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "オレンジビターズ",
+        "amount": "1",
+        "unit": "dash"
+      },
+      {
+        "name": "レモンピール",
+        "amount": "1",
+        "unit": "片"
+      }
+    ],
+    "instructions": [
+      "ミキシンググラスに材料と氷を入れる",
+      "ステアする",
+      "カクテルグラスに注ぐ",
+      "レモンピールで飾る"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ワイン",
+      "ジン",
+      "ハーブ"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 82,
+    "name": "イーストインディア",
+    "name_en": "East India",
+    "image_url": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ブランデーとパイナップルのカクテル",
+    "ingredients": [
+      {
+        "name": "ブランデー",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "オレンジキュラソー",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "パイナップルジュース",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "アンゴスチュラビターズ",
+        "amount": "2",
+        "unit": "dash"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ",
+      "チェリーで飾る"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ブランデー",
+      "パイナップル",
+      "フルーティー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 83,
+    "name": "フォグカッター",
+    "name_en": "Fog Cutter",
+    "image_url": "https://images.unsplash.com/photo-1541855493-0ee1394b1d1e?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "霧を切り裂くほど強いティキカクテル",
+    "ingredients": [
+      {
+        "name": "ホワイトラム",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "ジン",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "ブランデー",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "オレンジジュース",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "オルジェーシロップ",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "シェリー",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料（シェリー以外）と氷を入れる",
+      "よくシェイクする",
+      "コリンズグラスに注ぐ",
+      "シェリーをフロートする"
+    ],
+    "glass": "コリンズグラス",
+    "category": "ティキカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "複雑",
+      "フルーティー",
+      "強い"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 84,
+    "name": "グラスホッパー",
+    "name_en": "Grasshopper",
+    "image_url": "https://images.unsplash.com/photo-1574095855929-2cec6ab7af69?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "緑色のデザートカクテル",
+    "ingredients": [
+      {
+        "name": "グリーンクレームドマント",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "ホワイトクレームドカカオ",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "生クリーム",
+        "amount": "30",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "low",
+    "flavors": [
+      "ミント",
+      "チョコレート",
+      "クリーミー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 85,
+    "name": "ホースズネック",
+    "name_en": "Horse's Neck",
+    "image_url": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ブランデーとジンジャーエールのロングカクテル",
+    "ingredients": [
+      {
+        "name": "ブランデー",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "ジンジャーエール",
+        "amount": "適量",
+        "unit": null
+      },
+      {
+        "name": "レモンピール",
+        "amount": "1",
+        "unit": "長い螺旋状"
+      },
+      {
+        "name": "アンゴスチュラビターズ",
+        "amount": "2",
+        "unit": "dash"
+      }
+    ],
+    "instructions": [
+      "ハイボールグラスにレモンピールを螺旋状に入れる",
+      "氷を加える",
+      "ブランデーとビターズを注ぐ",
+      "ジンジャーエールで満たす"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ブランデー",
+      "ジンジャー",
+      "レモン"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 86,
+    "name": "インペリアル",
+    "name_en": "Imperial",
+    "image_url": "https://images.unsplash.com/photo-1560512823-829485b8bf24?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ジンとベルモットの王室風カクテル",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "ドライベルモット",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "マラスキーノリキュール",
+        "amount": "5",
+        "unit": "ml"
+      },
+      {
+        "name": "アンゴスチュラビターズ",
+        "amount": "2",
+        "unit": "dash"
+      }
+    ],
+    "instructions": [
+      "ミキシンググラスに材料と氷を入れる",
+      "ステアする",
+      "カクテルグラスに注ぐ",
+      "チェリーで飾る"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ジン",
+      "ドライ",
+      "チェリー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 87,
+    "name": "ジャックローズ",
+    "name_en": "Jack Rose",
+    "image_url": "https://images.unsplash.com/photo-1561651188-d207bbec0088?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "アップルジャックを使ったピンクのカクテル",
+    "ingredients": [
+      {
+        "name": "アップルジャック",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "グレナディンシロップ",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "アップル",
+      "酸味",
+      "甘い"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 88,
+    "name": "キールロワイヤル",
+    "name_en": "Kir Royale",
+    "image_url": "https://images.unsplash.com/photo-1586116593897-d2e7d46fc6a0?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "カシスとシャンパンのエレガントなカクテル",
+    "ingredients": [
+      {
+        "name": "クレームドカシス",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "シャンパン",
+        "amount": "適量",
+        "unit": null
+      }
+    ],
+    "instructions": [
+      "シャンパングラスにカシスを注ぐ",
+      "冷えたシャンパンをゆっくり注ぐ",
+      "軽くステアする"
+    ],
+    "glass": "シャンパングラス",
+    "category": "スパークリングカクテル",
+    "alcohol_content": "low",
+    "flavors": [
+      "カシス",
+      "シャンパン",
+      "エレガント"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 89,
+    "name": "リンデンツリー",
+    "name_en": "Linden Tree",
+    "image_url": "https://images.unsplash.com/photo-1546171753-97d7676e4602?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ハーブリキュールを使った爽やかなカクテル",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "セントジャーメイン",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "トニックウォーター",
+        "amount": "適量",
+        "unit": null
+      }
+    ],
+    "instructions": [
+      "ハイボールグラスに氷を入れる",
+      "ジン、セントジャーメイン、ライムジュースを注ぐ",
+      "トニックウォーターで満たす",
+      "ステアする",
+      "ライムで飾る"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ジン",
+      "エルダーフラワー",
+      "爽やか"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 90,
+    "name": "メアリーピックフォード",
+    "name_en": "Mary Pickford",
+    "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "女優の名を冠したラムカクテル",
+    "ingredients": [
+      {
+        "name": "ホワイトラム",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "パイナップルジュース",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "グレナディンシロップ",
+        "amount": "10",
+        "unit": "ml"
+      },
+      {
+        "name": "マラスキーノリキュール",
+        "amount": "5",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ",
+      "チェリーで飾る"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ラム",
+      "パイナップル",
+      "甘い"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 91,
+    "name": "ニューヨークサワー",
+    "name_en": "New York Sour",
+    "image_url": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "赤ワインをフロートしたウイスキーサワー",
+    "ingredients": [
+      {
+        "name": "バーボンウイスキー",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "シュガーシロップ",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "赤ワイン",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料（赤ワイン以外）と氷を入れる",
+      "シェイクする",
+      "ロックグラスに注ぐ",
+      "赤ワインをフロートする"
+    ],
+    "glass": "ロックグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ウイスキー",
+      "酸味",
+      "ワイン"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 92,
+    "name": "オリンピック",
+    "name_en": "Olympic",
+    "image_url": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ブランデーとオレンジのクラシックカクテル",
+    "ingredients": [
+      {
+        "name": "ブランデー",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "オレンジキュラソー",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "オレンジジュース",
+        "amount": "30",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ブランデー",
+      "オレンジ",
+      "フルーティー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 93,
+    "name": "ピンクジン",
+    "name_en": "Pink Gin",
+    "image_url": "https://images.unsplash.com/photo-1536935338788-846bb9981813?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ジンとビターズのシンプルなカクテル",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "アンゴスチュラビターズ",
+        "amount": "3-4",
+        "unit": "dash"
+      }
+    ],
+    "instructions": [
+      "カクテルグラスにビターズを入れて回す",
+      "余分なビターズを捨てる",
+      "冷やしたジンを注ぐ"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "ジン",
+      "ビター",
+      "ドライ"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 94,
+    "name": "クォーターデック",
+    "name_en": "Quarterdeck",
+    "image_url": "https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ラムとシェリーの海軍風カクテル",
+    "ingredients": [
+      {
+        "name": "ダークラム",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "ドライシェリー",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ラム",
+      "シェリー",
+      "ライム"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 95,
+    "name": "ラッスルネイル",
+    "name_en": "Rusty Nail",
+    "image_url": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "スコッチとドランブイのシンプルなカクテル",
+    "ingredients": [
+      {
+        "name": "スコッチウイスキー",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "ドランブイ",
+        "amount": "25",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンピール",
+        "amount": "1",
+        "unit": "片"
+      }
+    ],
+    "instructions": [
+      "ロックグラスに氷を入れる",
+      "スコッチとドランブイを注ぐ",
+      "ステアする",
+      "レモンピールで飾る"
+    ],
+    "glass": "ロックグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "high",
+    "flavors": [
+      "スコッチ",
+      "ハチミツ",
+      "ハーブ"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 96,
+    "name": "スロージンフィズ",
+    "name_en": "Sloe Gin Fizz",
+    "image_url": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "スロージンを使った泡立つカクテル",
+    "ingredients": [
+      {
+        "name": "スロージン",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "シュガーシロップ",
+        "amount": "10",
+        "unit": "ml"
+      },
+      {
+        "name": "ソーダ水",
+        "amount": "適量",
+        "unit": null
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料（ソーダ水以外）と氷を入れる",
+      "シェイクする",
+      "コリンズグラスに注ぐ",
+      "ソーダ水をトップ"
+    ],
+    "glass": "コリンズグラス",
+    "category": "ロングカクテル",
+    "alcohol_content": "low",
+    "flavors": [
+      "スロー",
+      "レモン",
+      "泡立ち"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 97,
+    "name": "タンゴ",
+    "name_en": "Tango",
+    "image_url": "https://images.unsplash.com/photo-1557682224-5b8590cd9ec5?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ジンとオレンジの情熱的なカクテル",
+    "ingredients": [
+      {
+        "name": "ジン",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "スイートベルモット",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "ドライベルモット",
+        "amount": "15",
+        "unit": "ml"
+      },
+      {
+        "name": "オレンジジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "オレンジキュラソー",
+        "amount": "5",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ジン",
+      "オレンジ",
+      "ベルモット"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 98,
+    "name": "アップタウン",
+    "name_en": "Uptown",
+    "image_url": "https://images.unsplash.com/photo-1606762899601-16a0b47c2c79?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "バーボンとアマレットの都会的カクテル",
+    "ingredients": [
+      {
+        "name": "バーボンウイスキー",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "アマレット",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "オレンジジュース",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "アンゴスチュラビターズ",
+        "amount": "2",
+        "unit": "dash"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "ロックグラスに注ぐ",
+      "オレンジスライスで飾る"
+    ],
+    "glass": "ロックグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "バーボン",
+      "アーモンド",
+      "オレンジ"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 99,
+    "name": "ベネチアンサンセット",
+    "name_en": "Venetian Sunset",
+    "image_url": "https://images.unsplash.com/photo-1520637836862-4d197d17c55a?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "グラッパとオレンジの夕焼けカクテル",
+    "ingredients": [
+      {
+        "name": "グラッパ",
+        "amount": "45",
+        "unit": "ml"
+      },
+      {
+        "name": "アペロール",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "オレンジジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "15",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ",
+      "オレンジピールで飾る"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "グラッパ",
+      "ビター",
+      "オレンジ"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 100,
+    "name": "ホワイトロシアン",
+    "name_en": "White Russian",
+    "image_url": "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ウォッカとコーヒーリキュールのクリーミーカクテル",
+    "ingredients": [
+      {
+        "name": "ウォッカ",
+        "amount": "40",
+        "unit": "ml"
+      },
+      {
+        "name": "コーヒーリキュール",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "生クリーム",
+        "amount": "30",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "ロックグラスに氷を入れる",
+      "ウォッカとコーヒーリキュールを注ぐ",
+      "ステアする",
+      "生クリームをフロートする"
+    ],
+    "glass": "ロックグラス",
+    "category": "ショートカクテル",
+    "alcohol_content": "medium",
+    "flavors": [
+      "ウォッカ",
+      "コーヒー",
+      "クリーミー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 101,
+    "name": "ヴァージンモヒート",
+    "name_en": "Virgin Mojito",
+    "image_url": "https://images.unsplash.com/photo-1582818833087-9bdf6ab2bb0f?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ラムを使わない爽やかなノンアルコールモヒート",
+    "ingredients": [
+      {
+        "name": "ミントの葉",
+        "amount": "8-10",
+        "unit": "枚"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "シュガーシロップ",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "ソーダ水",
+        "amount": "適量",
+        "unit": null
+      },
+      {
+        "name": "ライム",
+        "amount": "1",
+        "unit": "くし切り"
+      }
+    ],
+    "instructions": [
+      "グラスにミントの葉とシュガーシロップを入れて軽くつぶす",
+      "ライムジュースを加える",
+      "クラッシュアイスを入れる",
+      "ソーダ水で満たす",
+      "軽くステアして完成",
+      "ライムとミントで飾る"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ノンアルコールカクテル",
+    "alcohol_content": "non-alcoholic",
+    "flavors": [
+      "ミント",
+      "ライム",
+      "爽やか"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 102,
+    "name": "シンデレラ",
+    "name_en": "Cinderella",
+    "image_url": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "フルーツジュースを組み合わせた魔法のノンアルコールカクテル",
+    "ingredients": [
+      {
+        "name": "オレンジジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "パイナップルジュース",
+        "amount": "30",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ノンアルコールカクテル",
+    "alcohol_content": "non-alcoholic",
+    "flavors": [
+      "オレンジ",
+      "パイナップル",
+      "フルーティー"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 103,
+    "name": "シャーリーテンプル",
+    "name_en": "Shirley Temple",
+    "image_url": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "子役女優の名前を冠したジンジャーエールベースのカクテル",
+    "ingredients": [
+      {
+        "name": "ジンジャーエール",
+        "amount": "180",
+        "unit": "ml"
+      },
+      {
+        "name": "グレナディンシロップ",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "5",
+        "unit": "ml"
+      },
+      {
+        "name": "チェリー",
+        "amount": "1",
+        "unit": "個"
+      }
+    ],
+    "instructions": [
+      "ハイボールグラスに氷を入れる",
+      "ジンジャーエールを注ぐ",
+      "ライムジュースを加える",
+      "グレナディンシロップをゆっくり注いでグラデーションを作る",
+      "チェリーで飾る"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ノンアルコールカクテル",
+    "alcohol_content": "non-alcoholic",
+    "flavors": [
+      "ジンジャー",
+      "チェリー",
+      "甘い"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 104,
+    "name": "サラトガクーラー",
+    "name_en": "Saratoga Cooler",
+    "image_url": "https://images.unsplash.com/photo-1574095855929-2cec6ab7af69?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ライムとジンジャーエールの爽やかなノンアルコールカクテル",
+    "ingredients": [
+      {
+        "name": "ライムジュース",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "シュガーシロップ",
+        "amount": "5",
+        "unit": "ml"
+      },
+      {
+        "name": "ジンジャーエール",
+        "amount": "250",
+        "unit": "ml"
+      },
+      {
+        "name": "ライム",
+        "amount": "1",
+        "unit": "くし切り"
+      }
+    ],
+    "instructions": [
+      "グラスにクラッシュアイスを入れる",
+      "ライムジュースとシュガーシロップを注ぐ",
+      "ジンジャーエールを注ぐ",
+      "ステアする",
+      "ライムで飾る"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ノンアルコールカクテル",
+    "alcohol_content": "non-alcoholic",
+    "flavors": [
+      "ライム",
+      "ジンジャー",
+      "爽やか"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 105,
+    "name": "フロリダ",
+    "name_en": "Florida",
+    "image_url": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "フロリダ産の柑橘類をふんだんに使ったノンアルコールカクテル",
+    "ingredients": [
+      {
+        "name": "オレンジジュース",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "シュガーシロップ",
+        "amount": "5",
+        "unit": "ml"
+      },
+      {
+        "name": "アンゴスチュラビターズ",
+        "amount": "2",
+        "unit": "dash"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ",
+      "オレンジスライスで飾る"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ノンアルコールカクテル",
+    "alcohol_content": "non-alcoholic",
+    "flavors": [
+      "オレンジ",
+      "レモン",
+      "シトラス"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 106,
+    "name": "ヴァージンメアリー",
+    "name_en": "Virgin Mary",
+    "image_url": "https://images.unsplash.com/photo-1560512823-829485b8bf24?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ウォッカを使わないブラッディマリー",
+    "ingredients": [
+      {
+        "name": "トマトジュース",
+        "amount": "120",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンジュース",
+        "amount": "10",
+        "unit": "ml"
+      },
+      {
+        "name": "ウスターソース",
+        "amount": "5",
+        "unit": "dash"
+      },
+      {
+        "name": "タバスコ",
+        "amount": "5",
+        "unit": "dash"
+      },
+      {
+        "name": "塩・胡椒",
+        "amount": "適量",
+        "unit": null
+      },
+      {
+        "name": "セロリ",
+        "amount": "1",
+        "unit": "本"
+      }
+    ],
+    "instructions": [
+      "ハイボールグラスに氷を入れる",
+      "トマトジュースを注ぐ",
+      "レモンジュース、ウスターソース、タバスコを加える",
+      "塩・胡椒で味を調える",
+      "よくステアする",
+      "セロリスティックで飾る"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ノンアルコールカクテル",
+    "alcohol_content": "non-alcoholic",
+    "flavors": [
+      "トマト",
+      "スパイシー",
+      "塩味"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 107,
+    "name": "ヴァージンブリーズ",
+    "name_en": "Virgin Breeze",
+    "image_url": "https://images.unsplash.com/photo-1561651188-d207bbec0088?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ピンク色が美しいグレープフルーツとクランベリーのカクテル",
+    "ingredients": [
+      {
+        "name": "グレープフルーツジュース",
+        "amount": "60",
+        "unit": "ml"
+      },
+      {
+        "name": "クランベリージュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "10",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "シェーカーに材料と氷を入れる",
+      "よくシェイクする",
+      "カクテルグラスに注ぐ",
+      "ライムホイールで飾る"
+    ],
+    "glass": "カクテルグラス",
+    "category": "ノンアルコールカクテル",
+    "alcohol_content": "non-alcoholic",
+    "flavors": [
+      "グレープフルーツ",
+      "クランベリー",
+      "酸味"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 108,
+    "name": "ヴァージンピニャコラーダ",
+    "name_en": "Virgin Piña Colada",
+    "image_url": "https://images.unsplash.com/photo-1586116593897-d2e7d46fc6a0?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "ラムを使わないトロピカルなココナッツとパイナップルのカクテル",
+    "ingredients": [
+      {
+        "name": "ココナッツクリーム",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "パイナップルジュース",
+        "amount": "90",
+        "unit": "ml"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "10",
+        "unit": "ml"
+      },
+      {
+        "name": "クラッシュアイス",
+        "amount": "1",
+        "unit": "カップ"
+      }
+    ],
+    "instructions": [
+      "ブレンダーに全ての材料を入れる",
+      "なめらかになるまでブレンドする",
+      "ハリケーングラスに注ぐ",
+      "パイナップルとチェリーで飾る"
+    ],
+    "glass": "ハリケーングラス",
+    "category": "ノンアルコールカクテル",
+    "alcohol_content": "non-alcoholic",
+    "flavors": [
+      "ココナッツ",
+      "パイナップル",
+      "トロピカル"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 109,
+    "name": "アーノルドパーマー",
+    "name_en": "Arnold Palmer",
+    "image_url": "https://images.unsplash.com/photo-1546171753-97d7676e4602?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "アイスティーとレモネードを混ぜた爽やかなドリンク",
+    "ingredients": [
+      {
+        "name": "アイスティー",
+        "amount": "90",
+        "unit": "ml"
+      },
+      {
+        "name": "レモネード",
+        "amount": "90",
+        "unit": "ml"
+      },
+      {
+        "name": "レモンスライス",
+        "amount": "1",
+        "unit": "枚"
+      }
+    ],
+    "instructions": [
+      "ハイボールグラスに氷を入れる",
+      "アイスティーを注ぐ",
+      "レモネードを注ぐ",
+      "軽くステアする",
+      "レモンスライスで飾る"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ノンアルコールカクテル",
+    "alcohol_content": "non-alcoholic",
+    "flavors": [
+      "ティー",
+      "レモン",
+      "爽やか"
+    ],
+    "is_original": false
+  },
+  {
+    "id": 110,
+    "name": "スパイシージンジャーライム",
+    "name_en": "Spicy Ginger Lime",
+    "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&h=300&fit=crop&crop=center&auto=format&q=80",
+    "description": "生姜とライムのスパイシーで爽やかなカクテル",
+    "ingredients": [
+      {
+        "name": "生姜",
+        "amount": "10",
+        "unit": "g"
+      },
+      {
+        "name": "ライムジュース",
+        "amount": "30",
+        "unit": "ml"
+      },
+      {
+        "name": "シュガーシロップ",
+        "amount": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "ソーダ水",
+        "amount": "120",
+        "unit": "ml"
+      },
+      {
+        "name": "ライム",
+        "amount": "1",
+        "unit": "くし切り"
+      }
+    ],
+    "instructions": [
+      "グラスで生姜とシュガーシロップを軽くつぶす",
+      "ライムジュースを加える",
+      "氷を入れる",
+      "ソーダ水で満たす",
+      "よくステアする",
+      "ライムで飾る"
+    ],
+    "glass": "ハイボールグラス",
+    "category": "ノンアルコールカクテル",
+    "alcohol_content": "non-alcoholic",
+    "flavors": [
+      "ジンジャー",
+      "ライム",
+      "スパイシー"
+    ],
+    "is_original": false
+  }
+]
