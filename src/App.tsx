@@ -1,32 +1,40 @@
 import { useState, useMemo, useEffect, useCallback } from 'react'
+// useMemo is used for allAlcoholTags and isMobileDevice
 import './App.css'
-import { cocktails as initialCocktails } from './data/cocktails'
 import { CocktailCard } from './components/CocktailCard'
 import { CocktailForm } from './components/CocktailForm'
 import { BartenderLoading } from './components/BartenderLoading'
 import { useShakeDetector } from './components/ShakeDetector'
-import { imageStorage } from './utils/imageStorage'
+import { AuthForm } from './components/AuthForm'
 import { soundUtils } from './utils/soundUtils'
+import { useAuth } from './contexts/AuthContext'
+import {
+  fetchCocktails,
+  fetchRandomCocktail,
+  createCocktail,
+  updateCocktail,
+  deleteCocktail
+} from './api/cocktailApi'
 import type { Cocktail } from './types/cocktail'
 
 function App() {
+  const { currentUser, isAuthenticated, isLoading: authLoading, logout } = useAuth()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [selectedCocktail, setSelectedCocktail] = useState<Cocktail | null>(null)
-  const [searchTerm, setSearchTerm] = useState('')
-  const [selectedCategory, setSelectedCategory] = useState('all')
-  const [selectedAlcoholLevel, setSelectedAlcoholLevel] = useState('all')
   const [showAddForm, setShowAddForm] = useState(false)
   const [showEditForm, setShowEditForm] = useState(false)
   const [editingCocktail, setEditingCocktail] = useState<Cocktail | null>(null)
-  const [cocktails, setCocktails] = useState<Cocktail[]>(initialCocktails)
+  const [cocktails, setCocktails] = useState<Cocktail[]>([])
   const [isSearching, setIsSearching] = useState(false)
-  const [displayedCocktails, setDisplayedCocktails] = useState<Cocktail[]>(initialCocktails)
+  const [displayedCocktails, setDisplayedCocktails] = useState<Cocktail[]>([])
   const [pendingSearchTerm, setPendingSearchTerm] = useState('')
   const [pendingCategory, setPendingCategory] = useState('all')
   const [pendingAlcoholLevel, setPendingAlcoholLevel] = useState('all')
   const [isShakeEnabled, setIsShakeEnabled] = useState(false)
   const [isShaking, setIsShaking] = useState(false)
   const [soundEnabled, setSoundEnabled] = useState(true)
+  const [showAuthForm, setShowAuthForm] = useState(false)
+  const [isApiLoading, setIsApiLoading] = useState(true)
 
   // モバイルデバイス判定
   const isMobileDevice = useMemo(() => {
@@ -37,58 +45,31 @@ function App() {
     )
   }, [])
 
+  // APIからカクテル一覧を取得
   useEffect(() => {
-    const loadCocktails = async () => {
-      const savedCustom = localStorage.getItem('customCocktails')
-      const savedDeleted = localStorage.getItem('deletedCocktails')
-      const savedEdited = localStorage.getItem('editedCocktails')
-      const savedSoundEnabled = localStorage.getItem('soundEnabled')
-      
-      const customCocktails = savedCustom ? JSON.parse(savedCustom) : []
-      const deletedCocktails = savedDeleted ? JSON.parse(savedDeleted) : []
-      const editedCocktails = savedEdited ? JSON.parse(savedEdited) : {}
-      
-      // 音声設定を読み込み
-      if (savedSoundEnabled !== null) {
-        setSoundEnabled(JSON.parse(savedSoundEnabled))
-      }
-      
-      const visibleInitialCocktails = initialCocktails
-        .filter(c => !deletedCocktails.includes(c.id))
-        .map(c => editedCocktails[c.id] || c)
-      
-      const allCocktails = [...visibleInitialCocktails, ...customCocktails]
-      
-      // IndexedDBから画像を復元
-      try {
-        await imageStorage.init()
-        const imageIds = await imageStorage.getAllImageIds()
-        
-        for (const cocktail of allCocktails) {
-          if (cocktail.image && cocktail.image.startsWith('data:')) {
-            // 既にBase64画像がある場合はIndexedDBに保存
-            await imageStorage.saveImage(cocktail.id, cocktail.image)
-          } else if (imageIds.includes(cocktail.id)) {
-            // IndexedDBに画像がある場合は復元
-            const image = await imageStorage.getImage(cocktail.id)
-            if (image) {
-              cocktail.image = image
-            }
-          }
-        }
-      } catch (error) {
-        console.error('Failed to load images from IndexedDB:', error)
-      }
-      
-      setCocktails(allCocktails)
+    const savedSoundEnabled = localStorage.getItem('soundEnabled')
+    if (savedSoundEnabled !== null) {
+      setSoundEnabled(JSON.parse(savedSoundEnabled))
     }
-    
+
+    const loadCocktails = async () => {
+      setIsApiLoading(true)
+      try {
+        const { cocktails: data } = await fetchCocktails({ per_page: 200 })
+        setCocktails(data)
+        setDisplayedCocktails(data)
+      } catch (error) {
+        console.error('Failed to load cocktails:', error)
+      } finally {
+        setIsApiLoading(false)
+      }
+    }
+
     loadCocktails()
   }, [])
 
   const categories = ['all', 'ショートカクテル', 'ロングカクテル', 'フローズンカクテル', 'ティキカクテル', 'スパークリングカクテル', 'ホットカクテル', 'ビアカクテル']
-  
-  // アルコール度数タグの一覧を取得
+
   const allAlcoholTags = useMemo(() => {
     const uniqueTags = new Set<string>()
     cocktails.forEach(cocktail => {
@@ -96,8 +77,7 @@ function App() {
     })
     return ['all', ...Array.from(uniqueTags).sort()]
   }, [cocktails])
-  
-  // デフォルトタグの表示名マッピング
+
   const getAlcoholTagLabel = (tag: string) => {
     const labels: Record<string, string> = {
       'all': 'すべて',
@@ -111,12 +91,9 @@ function App() {
 
   // シェイク開始時の処理
   const handleShakeStart = useCallback(async () => {
-    // シェイク開始のフィードバック（軽い振動）
     if ('vibrate' in navigator) {
       navigator.vibrate(50)
     }
-    
-    // 軽い効果音
     if (soundEnabled) {
       try {
         await soundUtils.playPopSound()
@@ -126,30 +103,25 @@ function App() {
     }
   }, [soundEnabled])
 
-  // シェイク終了時の処理
+  // シェイク終了時の処理（APIからランダム取得）
   const handleShakeEnd = useCallback(() => {
-    if (cocktails.length === 0) return
-    
-    // 調合中画面を表示
     setIsShaking(true)
-    
-    // ランダムにカクテルを選択
-    const randomIndex = Math.floor(Math.random() * cocktails.length)
-    const randomCocktail = cocktails[randomIndex]
-    
-    // 2.5秒後にカクテルを表示（調合時間）
+
     setTimeout(async () => {
-      setSelectedCocktail(randomCocktail)
+      try {
+        const randomCocktail = await fetchRandomCocktail()
+        setSelectedCocktail(randomCocktail)
+      } catch {
+        if (cocktails.length > 0) {
+          const randomIndex = Math.floor(Math.random() * cocktails.length)
+          setSelectedCocktail(cocktails[randomIndex])
+        }
+      }
       setIsShaking(false)
-      
-      // カクテル完成時の通知
-      // バイブレーション
+
       if ('vibrate' in navigator) {
-        // より印象的なバイブレーションパターン：短い→長い→短い→長い
         navigator.vibrate([150, 100, 300, 100, 150])
       }
-      
-      // 効果音
       if (soundEnabled) {
         try {
           await soundUtils.playSuccessChime()
@@ -160,71 +132,56 @@ function App() {
     }, 2500)
   }, [cocktails, soundEnabled])
 
-  // ShakeDetectorの設定
   const shakeDetector = useShakeDetector({
     onShakeStart: handleShakeStart,
     onShakeEnd: handleShakeEnd,
     isEnabled: isShakeEnabled && !selectedCocktail && !showAddForm && !showEditForm
   })
 
-  // 検索実行関数
-  const executeSearch = useCallback(() => {
-    setSearchTerm(pendingSearchTerm)
-    setSelectedCategory(pendingCategory)
-    setSelectedAlcoholLevel(pendingAlcoholLevel)
+  // 検索実行
+  const executeSearch = useCallback(async () => {
+    setIsSearching(true)
+
+    try {
+      const { cocktails: data } = await fetchCocktails({
+        search: pendingSearchTerm || undefined,
+        category: pendingCategory !== 'all' ? pendingCategory : undefined,
+        alcoholContent: pendingAlcoholLevel !== 'all' ? pendingAlcoholLevel : undefined,
+        per_page: 200
+      })
+      setTimeout(() => {
+        setDisplayedCocktails(data)
+        setIsSearching(false)
+      }, 2000)
+    } catch (error) {
+      console.error('Search failed:', error)
+      setIsSearching(false)
+    }
   }, [pendingSearchTerm, pendingCategory, pendingAlcoholLevel])
 
+
   const handleAddCocktail = async (newCocktailData: Omit<Cocktail, 'id'>) => {
-    const newCocktail: Cocktail = {
-      ...newCocktailData,
-      id: `custom-${Date.now()}`
+    try {
+      const newCocktail = await createCocktail(newCocktailData)
+      setCocktails(prev => [...prev, newCocktail])
+      setShowAddForm(false)
+      setSelectedCocktail(newCocktail)
+    } catch (error) {
+      console.error('Failed to create cocktail:', error)
+      alert('カクテルの追加に失敗しました')
     }
-    
-    // 画像がBase64の場合はIndexedDBに保存
-    if (newCocktail.image && newCocktail.image.startsWith('data:')) {
-      try {
-        await imageStorage.saveImage(newCocktail.id, newCocktail.image)
-      } catch (error) {
-        console.error('Failed to save image to IndexedDB:', error)
-      }
-    }
-    
-    const customCocktails = cocktails.filter(c => c.id.startsWith('custom-'))
-    const updatedCustomCocktails = [...customCocktails, newCocktail]
-    
-    localStorage.setItem('customCocktails', JSON.stringify(updatedCustomCocktails))
-    setCocktails([...initialCocktails, ...updatedCustomCocktails])
-    
-    setShowAddForm(false)
-    setSelectedCocktail(newCocktail)
   }
 
   const handleDeleteCocktail = async (cocktailToDelete: Cocktail) => {
-    // IndexedDBから画像を削除
     try {
-      await imageStorage.deleteImage(cocktailToDelete.id)
+      await deleteCocktail(cocktailToDelete.id)
+      setCocktails(prev => prev.filter(c => c.id !== cocktailToDelete.id))
+      if (selectedCocktail?.id === cocktailToDelete.id) {
+        setSelectedCocktail(null)
+      }
     } catch (error) {
-      console.error('Failed to delete image from IndexedDB:', error)
-    }
-    
-    if (cocktailToDelete.id.startsWith('custom-')) {
-      // カスタムカクテルの削除
-      const customCocktails = cocktails.filter(c => c.id.startsWith('custom-') && c.id !== cocktailToDelete.id)
-      localStorage.setItem('customCocktails', JSON.stringify(customCocktails))
-      setCocktails([...initialCocktails, ...customCocktails])
-    } else {
-      // 既存カクテルの削除（非表示リストに追加）
-      const deletedCocktails = JSON.parse(localStorage.getItem('deletedCocktails') || '[]')
-      const updatedDeletedCocktails = [...deletedCocktails, cocktailToDelete.id]
-      localStorage.setItem('deletedCocktails', JSON.stringify(updatedDeletedCocktails))
-      
-      const customCocktails = cocktails.filter(c => c.id.startsWith('custom-'))
-      const visibleInitialCocktails = initialCocktails.filter(c => !updatedDeletedCocktails.includes(c.id))
-      setCocktails([...visibleInitialCocktails, ...customCocktails])
-    }
-    
-    if (selectedCocktail && selectedCocktail.id === cocktailToDelete.id) {
-      setSelectedCocktail(null)
+      console.error('Failed to delete cocktail:', error)
+      alert('カクテルの削除に失敗しました')
     }
   }
 
@@ -236,82 +193,25 @@ function App() {
 
   const handleUpdateCocktail = async (updatedCocktailData: Omit<Cocktail, 'id'>) => {
     if (!editingCocktail) return
-
-    const updatedCocktail: Cocktail = {
-      ...updatedCocktailData,
-      id: editingCocktail.id
+    try {
+      const updatedCocktail = await updateCocktail(editingCocktail.id, updatedCocktailData)
+      setCocktails(prev => prev.map(c => c.id === editingCocktail.id ? updatedCocktail : c))
+      setShowEditForm(false)
+      setEditingCocktail(null)
+      setSelectedCocktail(updatedCocktail)
+    } catch (error) {
+      console.error('Failed to update cocktail:', error)
+      alert('カクテルの更新に失敗しました')
     }
-    
-    // 画像がBase64の場合はIndexedDBに保存
-    if (updatedCocktail.image && updatedCocktail.image.startsWith('data:')) {
-      try {
-        await imageStorage.saveImage(updatedCocktail.id, updatedCocktail.image)
-      } catch (error) {
-        console.error('Failed to save image to IndexedDB:', error)
-      }
-    }
-
-    if (editingCocktail.id.startsWith('custom-')) {
-      // カスタムカクテルの編集
-      const customCocktails = cocktails.filter(c => c.id.startsWith('custom-'))
-      const updatedCustomCocktails = customCocktails.map(c => 
-        c.id === editingCocktail.id ? updatedCocktail : c
-      )
-      
-      localStorage.setItem('customCocktails', JSON.stringify(updatedCustomCocktails))
-      
-      const deletedCocktails = JSON.parse(localStorage.getItem('deletedCocktails') || '[]')
-      const visibleInitialCocktails = initialCocktails.filter(c => !deletedCocktails.includes(c.id))
-      setCocktails([...visibleInitialCocktails, ...updatedCustomCocktails])
-    } else {
-      // 既存カクテルの編集（編集されたバージョンをカスタムカクテルとして保存）
-      const editedCocktails = JSON.parse(localStorage.getItem('editedCocktails') || '{}')
-      editedCocktails[editingCocktail.id] = updatedCocktail
-      localStorage.setItem('editedCocktails', JSON.stringify(editedCocktails))
-      
-      const customCocktails = cocktails.filter(c => c.id.startsWith('custom-'))
-      const deletedCocktails = JSON.parse(localStorage.getItem('deletedCocktails') || '[]')
-      const visibleInitialCocktails = initialCocktails.filter(c => !deletedCocktails.includes(c.id))
-        .map(c => editedCocktails[c.id] || c)
-      
-      setCocktails([...visibleInitialCocktails, ...customCocktails])
-    }
-
-    setShowEditForm(false)
-    setEditingCocktail(null)
-    setSelectedCocktail(updatedCocktail)
   }
 
-  const filteredCocktails = useMemo(() => {
-    return cocktails.filter(cocktail => {
-      const matchesSearch = cocktail.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                          cocktail.nameEn.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                          cocktail.description.toLowerCase().includes(searchTerm.toLowerCase())
-      const matchesCategory = selectedCategory === 'all' || cocktail.category === selectedCategory
-      const matchesAlcoholLevel = selectedAlcoholLevel === 'all' || cocktail.alcoholContent === selectedAlcoholLevel
-      
-      return matchesSearch && matchesCategory && matchesAlcoholLevel
-    })
-  }, [cocktails, searchTerm, selectedCategory, selectedAlcoholLevel])
-
-  // 検索時に2秒の遅延とアニメーションを追加
-  useEffect(() => {
-    // 検索条件が変更された時のみ検索実行
-    if (searchTerm !== '' || selectedCategory !== 'all' || selectedAlcoholLevel !== 'all') {
-      setIsSearching(true)
-      
-      const timer = setTimeout(() => {
-        setDisplayedCocktails(filteredCocktails)
-        setIsSearching(false)
-      }, 2000)
-
-      return () => clearTimeout(timer)
-    } else {
-      // 初期状態では全件表示
-      setDisplayedCocktails(filteredCocktails)
-      setIsSearching(false)
-    }
-  }, [filteredCocktails, searchTerm, selectedCategory, selectedAlcoholLevel])
+  if (authLoading || isApiLoading) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-gray-500 text-lg">読み込み中...</div>
+      </div>
+    )
+  }
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -321,23 +221,21 @@ function App() {
             <div className="flex items-center">
               <h1 className="text-xl sm:text-2xl font-bold text-gray-800">カクテルレシピ</h1>
             </div>
-            
+
             <div className="hidden sm:flex items-center space-x-4">
               {isMobileDevice && shakeDetector.isSupported && (
                 <button
                   onClick={async () => {
                     if (!shakeDetector.permissionGranted) {
                       const granted = await shakeDetector.requestPermission()
-                      if (granted) {
-                        setIsShakeEnabled(!isShakeEnabled)
-                      }
+                      if (granted) setIsShakeEnabled(!isShakeEnabled)
                     } else {
                       setIsShakeEnabled(!isShakeEnabled)
                     }
                   }}
                   className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                    isShakeEnabled 
-                      ? 'bg-purple-500 text-white hover:bg-purple-600' 
+                    isShakeEnabled
+                      ? 'bg-purple-500 text-white hover:bg-purple-600'
                       : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
                   }`}
                   title="スマホを振ってランダムカクテル"
@@ -353,14 +251,11 @@ function App() {
                   const newSoundEnabled = !soundEnabled
                   setSoundEnabled(newSoundEnabled)
                   localStorage.setItem('soundEnabled', JSON.stringify(newSoundEnabled))
-                  // テスト音を再生
-                  if (newSoundEnabled) {
-                    soundUtils.playBellSound(0.3)
-                  }
+                  if (newSoundEnabled) soundUtils.playBellSound(0.3)
                 }}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                  soundEnabled 
-                    ? 'bg-green-500 text-white hover:bg-green-600' 
+                  soundEnabled
+                    ? 'bg-green-500 text-white hover:bg-green-600'
                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
                 }`}
                 title="効果音のオン/オフ"
@@ -374,7 +269,7 @@ function App() {
                 </svg>
                 <span className="ml-1">{soundEnabled ? '音ON' : '音OFF'}</span>
               </button>
-              <button 
+              <button
                 onClick={() => {
                   setSelectedCocktail(null)
                   setShowAddForm(false)
@@ -385,12 +280,32 @@ function App() {
               >
                 レシピ一覧
               </button>
-              <button 
-                onClick={() => setShowAddForm(true)}
-                className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium"
-              >
-                レシピを追加
-              </button>
+              {isAuthenticated ? (
+                <>
+                  <button
+                    onClick={() => setShowAddForm(true)}
+                    className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium"
+                  >
+                    レシピを追加
+                  </button>
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm text-gray-600">{currentUser?.name || currentUser?.email}</span>
+                    <button
+                      onClick={logout}
+                      className="text-gray-500 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                      ログアウト
+                    </button>
+                  </div>
+                </>
+              ) : (
+                <button
+                  onClick={() => setShowAuthForm(true)}
+                  className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium"
+                >
+                  ログイン
+                </button>
+              )}
             </div>
 
             <div className="sm:hidden flex items-center">
@@ -413,7 +328,7 @@ function App() {
         {isMenuOpen && (
           <div className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <button 
+              <button
                 onClick={() => {
                   setSelectedCocktail(null)
                   setShowAddForm(false)
@@ -425,31 +340,47 @@ function App() {
               >
                 レシピ一覧
               </button>
-              <button 
-                onClick={() => {
-                  setShowAddForm(true)
-                  setIsMenuOpen(false)
-                }}
-                className="block w-full text-left px-3 py-2 rounded-md text-base font-medium bg-blue-500 text-white hover:bg-blue-600"
-              >
-                レシピを追加
-              </button>
+              {isAuthenticated ? (
+                <>
+                  <button
+                    onClick={() => {
+                      setShowAddForm(true)
+                      setIsMenuOpen(false)
+                    }}
+                    className="block w-full text-left px-3 py-2 rounded-md text-base font-medium bg-blue-500 text-white hover:bg-blue-600"
+                  >
+                    レシピを追加
+                  </button>
+                  <div className="px-3 py-2 text-sm text-gray-600">{currentUser?.name || currentUser?.email}</div>
+                  <button
+                    onClick={() => { logout(); setIsMenuOpen(false) }}
+                    className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50"
+                  >
+                    ログアウト
+                  </button>
+                </>
+              ) : (
+                <button
+                  onClick={() => { setShowAuthForm(true); setIsMenuOpen(false) }}
+                  className="block w-full text-left px-3 py-2 rounded-md text-base font-medium bg-blue-500 text-white hover:bg-blue-600"
+                >
+                  ログイン
+                </button>
+              )}
               {isMobileDevice && shakeDetector.isSupported && (
                 <button
                   onClick={async () => {
                     if (!shakeDetector.permissionGranted) {
                       const granted = await shakeDetector.requestPermission()
-                      if (granted) {
-                        setIsShakeEnabled(!isShakeEnabled)
-                      }
+                      if (granted) setIsShakeEnabled(!isShakeEnabled)
                     } else {
                       setIsShakeEnabled(!isShakeEnabled)
                     }
                     setIsMenuOpen(false)
                   }}
                   className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium ${
-                    isShakeEnabled 
-                      ? 'bg-purple-500 text-white hover:bg-purple-600' 
+                    isShakeEnabled
+                      ? 'bg-purple-500 text-white hover:bg-purple-600'
                       : 'text-gray-700 hover:text-gray-900 hover:bg-gray-50'
                   }`}
                 >
@@ -464,15 +395,12 @@ function App() {
                   const newSoundEnabled = !soundEnabled
                   setSoundEnabled(newSoundEnabled)
                   localStorage.setItem('soundEnabled', JSON.stringify(newSoundEnabled))
-                  // テスト音を再生
-                  if (newSoundEnabled) {
-                    soundUtils.playBellSound(0.3)
-                  }
+                  if (newSoundEnabled) soundUtils.playBellSound(0.3)
                   setIsMenuOpen(false)
                 }}
                 className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium ${
-                  soundEnabled 
-                    ? 'bg-green-500 text-white hover:bg-green-600' 
+                  soundEnabled
+                    ? 'bg-green-500 text-white hover:bg-green-600'
                     : 'text-gray-700 hover:text-gray-900 hover:bg-gray-50'
                 }`}
               >
@@ -491,7 +419,6 @@ function App() {
       </nav>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* シェイク機能の通知 */}
         {isMobileDevice && isShakeEnabled && !selectedCocktail && !showAddForm && !showEditForm && (
           <div className="mb-4 p-4 bg-purple-100 border border-purple-300 rounded-lg flex items-center justify-between">
             <div className="flex items-center">
@@ -500,16 +427,14 @@ function App() {
               </svg>
               <span className="text-purple-800">スマホを振るとランダムでカクテルが表示されます！</span>
             </div>
-            <button
-              onClick={() => setIsShakeEnabled(false)}
-              className="text-purple-600 hover:text-purple-800"
-            >
+            <button onClick={() => setIsShakeEnabled(false)} className="text-purple-600 hover:text-purple-800">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
           </div>
         )}
+
         {!selectedCocktail && !showAddForm && !showEditForm && (
           <>
             <div className="mb-8 space-y-4">
@@ -554,7 +479,6 @@ function App() {
                     value={pendingCategory}
                     onChange={(e) => {
                       setPendingCategory(e.target.value)
-                      setSelectedCategory(e.target.value)
                     }}
                     className="w-full px-3 py-2 text-gray-700 bg-white border rounded-lg focus:outline-none focus:border-blue-500"
                   >
@@ -572,7 +496,6 @@ function App() {
                     value={pendingAlcoholLevel}
                     onChange={(e) => {
                       setPendingAlcoholLevel(e.target.value)
-                      setSelectedAlcoholLevel(e.target.value)
                     }}
                     className="w-full px-3 py-2 text-gray-700 bg-white border rounded-lg focus:outline-none focus:border-blue-500"
                   >
@@ -593,18 +516,16 @@ function App() {
             {!isSearching ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {displayedCocktails.map((cocktail) => (
-                  <CocktailCard 
-                    key={cocktail.id} 
-                    cocktail={cocktail} 
+                  <CocktailCard
+                    key={cocktail.id}
+                    cocktail={cocktail}
                     onClick={setSelectedCocktail}
                   />
                 ))}
               </div>
             ) : (
               <div className="flex justify-center items-center py-20">
-                <div className="text-gray-500">
-                  カクテルを検索中です...
-                </div>
+                <div className="text-gray-500">カクテルを検索中です...</div>
               </div>
             )}
           </>
@@ -622,36 +543,38 @@ function App() {
                 </svg>
                 戻る
               </button>
-              <div className="flex gap-2">
-                <button
-                  onClick={() => handleEditCocktail(selectedCocktail)}
-                  className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium flex items-center gap-2"
-                >
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                  </svg>
-                  編集
-                </button>
-                <button
-                  onClick={() => {
-                    if (window.confirm(`「${selectedCocktail.name}」を削除しますか？`)) {
-                      handleDeleteCocktail(selectedCocktail)
-                    }
-                  }}
-                  className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md text-sm font-medium flex items-center gap-2"
-                >
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                  </svg>
-                  削除
-                </button>
-              </div>
+              {selectedCocktail.canEdit && (
+                <div className="flex gap-2">
+                  <button
+                    onClick={() => handleEditCocktail(selectedCocktail)}
+                    className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium flex items-center gap-2"
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                    </svg>
+                    編集
+                  </button>
+                  <button
+                    onClick={() => {
+                      if (window.confirm(`「${selectedCocktail.name}」を削除しますか？`)) {
+                        handleDeleteCocktail(selectedCocktail)
+                      }
+                    }}
+                    className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md text-sm font-medium flex items-center gap-2"
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                    </svg>
+                    削除
+                  </button>
+                </div>
+              )}
             </div>
             <div className="text-center mb-6">
               {selectedCocktail.image ? (
                 <div className="w-64 h-48 mx-auto mb-4 rounded-lg overflow-hidden shadow-lg">
-                  <img 
-                    src={selectedCocktail.image} 
+                  <img
+                    src={selectedCocktail.image}
                     alt={selectedCocktail.name}
                     className="w-full h-full object-cover"
                     onError={(e) => {
@@ -725,7 +648,7 @@ function App() {
         {showAddForm && !showEditForm && (
           <div className="bg-white rounded-lg shadow-lg p-6">
             <h2 className="text-2xl font-bold text-gray-800 mb-6">オリジナルカクテルを追加</h2>
-            <CocktailForm 
+            <CocktailForm
               onSubmit={handleAddCocktail}
               onCancel={() => setShowAddForm(false)}
             />
@@ -735,7 +658,7 @@ function App() {
         {showEditForm && editingCocktail && (
           <div className="bg-white rounded-lg shadow-lg p-6">
             <h2 className="text-2xl font-bold text-gray-800 mb-6">「{editingCocktail.name}」を編集</h2>
-            <CocktailForm 
+            <CocktailForm
               onSubmit={handleUpdateCocktail}
               onCancel={() => {
                 setShowEditForm(false)
@@ -746,8 +669,10 @@ function App() {
           </div>
         )}
       </main>
-      
+
       <BartenderLoading isVisible={isSearching || isShaking} />
+
+      {showAuthForm && <AuthForm onClose={() => setShowAuthForm(false)} />}
     </div>
   )
 }
