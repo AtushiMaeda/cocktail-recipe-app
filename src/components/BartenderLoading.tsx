@@ -43,7 +43,7 @@ export const BartenderLoading = ({ isVisible }: BartenderLoadingProps) => {
               className="w-32 h-32 mx-auto rounded-lg"
               onLoadedData={handleVideoLoaded}
               onError={handleVideoError}
-              style={{ display: videoLoaded === false ? 'none' : 'block' }}
+              style={{ display: videoLoaded !== true ? 'none' : 'block' }}
             >
               <source src="/bartender-animation.mp4" type="video/mp4" />
             </video>

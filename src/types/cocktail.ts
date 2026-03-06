@@ -11,10 +11,18 @@ export interface Cocktail {
   alcoholContent: string;
   flavor: string[];
   isOriginal?: boolean;
+  userId?: string;
+  canEdit?: boolean;
 }
 
 export interface Ingredient {
   name: string;
   amount: string;
   unit?: string;
+}
+
+export interface User {
+  id: string;
+  email: string;
+  name?: string;
 }
