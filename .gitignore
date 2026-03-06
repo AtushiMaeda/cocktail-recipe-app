@@ -8,6 +8,13 @@ dist/
 .env
 .env.local
 .env.*.local
+.env.production
+
+# Terraform
+terraform/.terraform/
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/*.tfvars
 
 # Editor
 .DS_Store

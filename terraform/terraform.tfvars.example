@@ -1,0 +1,6 @@
+aws_region       = "ap-northeast-1"
+domain_name      = "cocktail-app.com"      # Route 53 で購入したドメイン
+app_name         = "cocktail"
+db_username      = "cocktail"
+db_password      = "CHANGE_ME_STRONG_PASSWORD"
+rails_master_key = "PASTE_CONTENTS_OF_backend/config/master.key"
