@@ -1,21 +1,24 @@
-class Cocktail < ApplicationRecord
+class Cocktail < ActiveRecord::Base
+  include ImageUploader::Attachment(:image_file)
+
   belongs_to :user, optional: true
 
-  has_one_attached :image
-
-  validates :name, presence: true
-  validates :name_en, presence: true
-  validates :description, presence: true
-  validates :glass, presence: true
-  validates :category, presence: true
+  validates :name,          presence: true
+  validates :name_en,       presence: true
+  validates :description,   presence: true
+  validates :glass,         presence: true
+  validates :category,      presence: true
   validates :alcohol_content, presence: true
-  validates :ingredients, presence: true
-  validates :instructions, presence: true, length: { minimum: 1 }
-  validate :ingredients_format
+  validates :ingredients,   presence: true
+  validates :instructions,  presence: true, length: { minimum: 1 }
+  validate  :ingredients_format
 
-  scope :by_category, ->(category) { where(category: category) if category.present? }
-  scope :by_alcohol_content, ->(alcohol_content) { where(alcohol_content: alcohol_content) if alcohol_content.present? }
-  scope :search_by_name, ->(query) { where("name ILIKE ? OR name_en ILIKE ?", "%#{query}%", "%#{query}%") if query.present? }
+  # 検索・フィルタ用スコープ
+  scope :by_category,       ->(cat)   { where(category: cat) if cat.present? }
+  scope :by_alcohol_content, ->(alc)  { where(alcohol_content: alc) if alc.present? }
+  scope :search_by_name,    ->(query) {
+    where("name ILIKE ? OR name_en ILIKE ?", "%#{query}%", "%#{query}%") if query.present?
+  }
 
   private
 
