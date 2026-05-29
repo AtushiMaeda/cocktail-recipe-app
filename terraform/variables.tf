@@ -27,8 +27,8 @@ variable "db_password" {
   sensitive   = true
 }
 
-variable "rails_master_key" {
-  description = "Rails MASTER_KEY (content of config/master.key)"
+variable "jwt_secret" {
+  description = "JWT signing secret for the Sinatra API (min 32 bytes). Generate with: ruby -rsecurerandom -e \"puts SecureRandom.hex(32)\""
   type        = string
   sensitive   = true
 }

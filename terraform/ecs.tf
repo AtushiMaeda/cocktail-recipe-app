@@ -34,11 +34,9 @@ resource "aws_ecs_task_definition" "api" {
     }]
 
     environment = [
-      { name = "RAILS_ENV",         value = "production" },
+      { name = "RACK_ENV",          value = "production" },
       { name = "WEB_CONCURRENCY",   value = "1" },
-      { name = "RAILS_MAX_THREADS", value = "3" },
       { name = "PORT",              value = "80" },
-      { name = "RAILS_SERVE_STATIC_FILES", value = "true" },
       { name = "AWS_REGION",        value = var.aws_region },
       { name = "S3_BUCKET_NAME",    value = aws_s3_bucket.active_storage.bucket },
       { name = "ALLOWED_ORIGINS",   value = "https://${var.domain_name}" },
@@ -46,12 +44,12 @@ resource "aws_ecs_task_definition" "api" {
 
     secrets = [
       {
-        name      = "RAILS_MASTER_KEY"
-        valueFrom = aws_secretsmanager_secret.rails_master_key.arn
-      },
-      {
         name      = "DATABASE_URL"
         valueFrom = aws_secretsmanager_secret.database_url.arn
+      },
+      {
+        name      = "JWT_SECRET"
+        valueFrom = aws_secretsmanager_secret.jwt_secret.arn
       },
     ]
 
