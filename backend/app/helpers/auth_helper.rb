@@ -1,5 +1,22 @@
 module AuthHelper
-  JWT_SECRET = ENV.fetch("JWT_SECRET", "dev-secret-please-change-in-production")
+  # RACK_ENV・RAILS_ENV どちらでも本番を検出する（terraform側の設定差異に対応）
+  JWT_SECRET = begin
+    env    = ENV["RACK_ENV"] || ENV["RAILS_ENV"] || "development"
+    secret = ENV["JWT_SECRET"]
+    if env == "production"
+      if secret.nil? || secret.strip.empty?
+        raise "JWT_SECRET environment variable must be set in production. " \
+              "Generate with: ruby -rsecurerandom -e \"puts SecureRandom.hex(32)\""
+      end
+      if secret.bytesize < 32
+        raise "JWT_SECRET must be at least 32 bytes (256 bits) for HS256. " \
+              "Generate with: ruby -rsecurerandom -e \"puts SecureRandom.hex(32)\""
+      end
+      secret
+    else
+      (secret && !secret.strip.empty?) ? secret : "development-only-insecure-secret-do-not-use-in-prod"
+    end
+  end
   JWT_EXPIRY  = 24 * 60 * 60  # 1日（秒）
 
   # ユーザーからJWTトークンを生成する
