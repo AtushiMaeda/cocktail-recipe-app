@@ -26,6 +26,9 @@ gem "aws-sdk-s3", "~> 1.170", require: false
 # CORS
 gem "rack-cors", "~> 2.0"
 
+# Rate limiting / brute-force protection
+gem "rack-attack", "~> 6.7"
+
 # JSON
 gem "json"
 
