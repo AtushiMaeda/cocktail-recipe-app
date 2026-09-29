@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import type { Cocktail } from '../types/cocktail';
 
 interface CocktailCardProps {
@@ -6,6 +7,8 @@ interface CocktailCardProps {
 }
 
 export const CocktailCard = ({ cocktail, onClick }: CocktailCardProps) => {
+  const [imgError, setImgError] = useState(false);
+
   const defaultAlcoholLevels: Record<string, { label: string; color: string }> = {
     'non-alcoholic': { label: 'ノンアルコール', color: 'bg-green-100 text-green-800' },
     'low': { label: '低アルコール', color: 'bg-blue-100 text-blue-800' },
@@ -25,15 +28,12 @@ export const CocktailCard = ({ cocktail, onClick }: CocktailCardProps) => {
       onClick={() => onClick(cocktail)}
     >
       <div className="h-48 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center overflow-hidden">
-        {cocktail.image ? (
-          <img 
-            src={cocktail.image} 
+        {cocktail.image && !imgError ? (
+          <img
+            src={cocktail.image}
             alt={cocktail.name}
             className="w-full h-full object-cover"
-            onError={(e) => {
-              e.currentTarget.style.display = 'none';
-              e.currentTarget.parentElement!.innerHTML = '<div class="text-white text-6xl">🍸</div>';
-            }}
+            onError={() => setImgError(true)}
           />
         ) : (
           <div className="text-white text-6xl">🍸</div>

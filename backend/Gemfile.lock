@@ -88,6 +88,8 @@ GEM
     puma (6.6.1)
       nio4r (~> 2.0)
     rack (3.2.5)
+    rack-attack (6.8.0)
+      rack (>= 1.0, < 4)
     rack-cors (2.0.2)
       rack (>= 2.0.0)
     rack-protection (4.2.1)
@@ -150,6 +152,7 @@ DEPENDENCIES
   jwt (~> 2.9)
   pg (~> 1.5)
   puma (~> 6.0)
+  rack-attack (~> 6.7)
   rack-cors (~> 2.0)
   rake
   rerun

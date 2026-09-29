@@ -3,7 +3,8 @@ class User < ActiveRecord::Base
 
   validates :email,    presence: true, uniqueness: { case_sensitive: false }
   validates :name,     presence: true
-  validates :password, presence: true, length: { minimum: 6 }, if: :password_required?
+  validates :password, presence: true, length: { minimum: 8 }, if: :password_required?
+  validate :password_complexity, if: :password_required?
 
   # バーチャル属性（DBには保存しない）
   attr_accessor :password
@@ -22,6 +23,14 @@ class User < ActiveRecord::Base
   end
 
   private
+
+  def password_complexity
+    return if password.blank?
+
+    unless password.match?(/[A-Za-z]/) && password.match?(/\d/)
+      errors.add(:password, "must include at least one letter and one number")
+    end
+  end
 
   def encrypt_password
     self.encrypted_password = BCrypt::Password.create(password)

@@ -35,6 +35,12 @@ function App() {
   const [soundEnabled, setSoundEnabled] = useState(true)
   const [showAuthForm, setShowAuthForm] = useState(false)
   const [isApiLoading, setIsApiLoading] = useState(true)
+  const [selectedCocktailImgError, setSelectedCocktailImgError] = useState(false)
+
+  // selectedCocktail が切り替わったら画像エラー状態をリセット
+  useEffect(() => {
+    setSelectedCocktailImgError(false)
+  }, [selectedCocktail?.id])
 
   // モバイルデバイス判定
   const isMobileDevice = useMemo(() => {
@@ -571,20 +577,17 @@ function App() {
               )}
             </div>
             <div className="text-center mb-6">
-              {selectedCocktail.image ? (
+              {selectedCocktail.image && !selectedCocktailImgError ? (
                 <div className="w-64 h-48 mx-auto mb-4 rounded-lg overflow-hidden shadow-lg">
                   <img
                     src={selectedCocktail.image}
                     alt={selectedCocktail.name}
                     className="w-full h-full object-cover"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                      e.currentTarget.parentElement!.innerHTML = '<div class="text-8xl mb-4 flex items-center justify-center h-full">🍸</div>';
-                    }}
+                    onError={() => setSelectedCocktailImgError(true)}
                   />
                 </div>
               ) : (
-                <div className="text-8xl mb-4">🍸</div>
+                <div className="text-8xl mb-4 flex items-center justify-center h-48">🍸</div>
               )}
               <h2 className="text-3xl font-bold text-gray-800 mb-2">
                 {selectedCocktail.name}

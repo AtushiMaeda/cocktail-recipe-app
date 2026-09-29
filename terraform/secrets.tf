@@ -1,12 +1,12 @@
-resource "aws_secretsmanager_secret" "rails_master_key" {
-  name                    = "${local.name_prefix}/rails-master-key"
+resource "aws_secretsmanager_secret" "jwt_secret" {
+  name                    = "${local.name_prefix}/jwt-secret"
   recovery_window_in_days = 7
   tags                    = local.tags
 }
 
-resource "aws_secretsmanager_secret_version" "rails_master_key" {
-  secret_id     = aws_secretsmanager_secret.rails_master_key.id
-  secret_string = var.rails_master_key
+resource "aws_secretsmanager_secret_version" "jwt_secret" {
+  secret_id     = aws_secretsmanager_secret.jwt_secret.id
+  secret_string = var.jwt_secret
 }
 
 resource "aws_secretsmanager_secret" "database_url" {
