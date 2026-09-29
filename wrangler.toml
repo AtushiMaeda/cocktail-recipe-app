@@ -1,0 +1,13 @@
+# Cloudflare Pages 設定（フロントエンド）
+# 参照: CLOUDFLARE_MIGRATION.md フェーズ1
+#
+# 実行方法:
+#   npx wrangler pages deploy dist --project-name=cocktail-recipe-app
+#
+# ビルド時の環境変数（VITE_API_BASE_URL 等）は Pages プロジェクトの
+# Settings > Environment variables で設定するか、CI側で `npm run build`
+# 実行時に渡すこと（.github/workflows/deploy-pages.yml を参照）。
+
+name = "cocktail-recipe-app"
+compatibility_date = "2026-09-29"
+pages_build_output_dir = "dist"
