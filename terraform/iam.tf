@@ -30,7 +30,7 @@ resource "aws_iam_role_policy" "ecs_task_execution_secrets" {
       Effect   = "Allow"
       Action   = ["secretsmanager:GetSecretValue"]
       Resource = [
-        aws_secretsmanager_secret.rails_master_key.arn,
+        aws_secretsmanager_secret.jwt_secret.arn,
         aws_secretsmanager_secret.database_url.arn,
       ]
     }]
