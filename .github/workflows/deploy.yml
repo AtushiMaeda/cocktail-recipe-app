@@ -1,9 +1,18 @@
-name: Deploy to AWS
+name: Deploy Backend to AWS (Cloudflare移行待ち)
+
+# NOTE: フロントエンドは Cloudflare Pages (deploy-pages.yml) に移行済み。
+# このワークフローはバックエンドのみを対象とする、CLOUDFLARE_MIGRATION.md
+# フェーズ4完了後に削除予定の暫定ワークフロー。
+# なお本リポジトリはAWSリソースを一度もapplyしておらず、GitHub Secrets未設定のため
+# このワークフローは現時点で必ず失敗する（既知の状態）。
 
 on:
   push:
     branches:
       - main
+    paths:
+      - "backend/**"
+      - ".github/workflows/deploy.yml"
 
 env:
   AWS_REGION: ap-northeast-1
@@ -12,55 +21,6 @@ env:
   ECS_SERVICE: cocktail-api
 
 jobs:
-  # ----------------------------------------------------------------
-  # フロントエンド: ビルド → S3 → CloudFront キャッシュ無効化
-  # ----------------------------------------------------------------
-  deploy-frontend:
-    name: Deploy Frontend
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-          cache: "npm"
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build
-        run: npm run build
-        env:
-          VITE_API_BASE_URL: ${{ secrets.VITE_API_BASE_URL }}
-
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ env.AWS_REGION }}
-
-      - name: Sync to S3
-        run: |
-          aws s3 sync dist/ s3://${{ secrets.FRONTEND_BUCKET_NAME }} \
-            --delete \
-            --cache-control "public,max-age=31536000,immutable" \
-            --exclude "index.html"
-
-          aws s3 cp dist/index.html s3://${{ secrets.FRONTEND_BUCKET_NAME }}/index.html \
-            --cache-control "no-cache,no-store,must-revalidate"
-
-      - name: Invalidate CloudFront cache
-        run: |
-          aws cloudfront create-invalidation \
-            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
-            --paths "/*"
-
-  # ----------------------------------------------------------------
-  # バックエンド: Docker ビルド → ECR → ECS デプロイ
-  # ----------------------------------------------------------------
   deploy-backend:
     name: Deploy Backend
     runs-on: ubuntu-latest
